@@ -1,0 +1,47 @@
+#================================================================
+#  Copyright (C) 2021 noodles. All rights reserved.
+#  
+#  文件名称：makeconfig
+#  创 建 者：noodles
+#  邮    箱：peizezhong@163.com
+#  创建日期：2021年09月10日
+#  描    述：
+#  
+#================================================================
+CFLAGS  		:= -g -Wall 
+INCLUDE 		:= 
+LIBS 			:= -lm
+TARGET_ARCH		:=
+OUTPUT_OPTION   :=
+
+BUILD_DIR		:= build
+DEP_DIR 		:= $(BUILD_DIR)/deps
+OBJ_DIR			:= $(BUILD_DIR)/objs
+BIN_DIR         := $(BUILD_DIR)/bins
+
+# default target
+APP             := $(BIN_DIR)/example_app
+
+SRC_FILES		:= $(notdir $(wildcard *.c))
+OBJ_FILES 		:= $(patsubst %.c, $(OBJ_DIR)/%.o, $(SRC_FILES))
+DEP_FILES 		:= $(patsubst %.c, $(DEP_DIR)/%.d, $(SRC_FILES)) 
+
+DEP_FLAGS 		= -MT $@ -MMD -MP -MF $(DEP_DIR)/$*.d
+COMPILE			= $(CC) $(CFLAGS) $(DEP_FLAGS) $(TARGET_ARCH) -c
+
+$(APP): $(BUILD_DIR) $(OBJ_FILES)
+	$(CC) $(CFLAGS) $(INCLUDE) -o $@ $(OBJ_FILES) $(LIBS)
+
+$(OBJ_DIR)/%.o: %.c
+	$(COMPILE) $(OUTPUT_OPTION) $< -o $@
+
+$(BUILD_DIR):
+	-mkdir -p $(OBJ_DIR)
+	-mkdir -p $(DEP_DIR) 
+	-mkdir -p $(BIN_DIR) 
+
+-include $(wildcard $(DEP_FILES))
+
+.PHONY: clean
+clean:
+	@rm -rf $(BUILD_DIR)

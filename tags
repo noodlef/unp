@@ -1,0 +1,1105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+.DEFAULT_GOAL	3rd/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	fsync/Makefile	/^.DEFAULT_GOAL = all $/;"	m
+.DEFAULT_GOAL	inetd/Makefile	/^.DEFAULT_GOAL = all$/;"	m
+.DEFAULT_GOAL	lib/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	lib/coroutine/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	lib/eventloop/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	lib/pthread/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	lib/timer/Makefile	/^.DEFAULT_GOAL = lib $/;"	m
+.DEFAULT_GOAL	ping/Makefile	/^.DEFAULT_GOAL = ping $/;"	m
+.DEFAULT_GOAL	src/Makefile	/^.DEFAULT_GOAL = tests$/;"	m
+.DEFAULT_GOAL	src/practice-16/web/Makefile	/^.DEFAULT_GOAL = $(BUILD_DIR)\/web $/;"	m
+.DEFAULT_GOAL	tests/Makefile	/^.DEFAULT_GOAL = tests$/;"	m
+.DEFAULT_GOAL	tftp/Makefile	/^.DEFAULT_GOAL = all $/;"	m
+ADDR_ANY_IPV4	lib/socket.h	20;"	d
+BLOCK_SZ	lib/buffer.c	21;"	d	file:
+BUFFER_HEAD	lib/buffer.c	28;"	d	file:
+BUFFER_TAIL	lib/buffer.c	27;"	d	file:
+CAPACITY	lib/buffer.c	30;"	d	file:
+CMD_DOWNLOAD_ACK	fsync/fsync.h	29;"	d
+CMD_DOWNLOAD_REQ	fsync/fsync.h	28;"	d
+CMD_SYNCINFO_ACK	fsync/fsync.h	31;"	d
+CMD_SYNCINFO_REQ	fsync/fsync.h	30;"	d
+CMD_UPLOAD_ACK	fsync/fsync.h	27;"	d
+CMD_UPLOAD_REQ	fsync/fsync.h	26;"	d
+COROUTINE_CANCELED	lib/coroutine/coroutine.h	22;"	d
+COROUTINE_DEAD	lib/coroutine/coroutine.h	23;"	d
+COROUTINE_READY	lib/coroutine/coroutine.h	19;"	d
+COROUTINE_RUNNABLE	lib/coroutine/coroutine.c	24;"	d	file:
+COROUTINE_RUNNING	lib/coroutine/coroutine.h	20;"	d
+COROUTINE_STK_SZ	lib/coroutine/coroutine.c	22;"	d	file:
+COROUTINE_STOPPED	lib/coroutine/coroutine.h	21;"	d
+DEP_OBJS	fsync/Makefile	/^DEP_OBJS := $(wildcard ..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+DEP_OBJS	inetd/Makefile	/^DEP_OBJS := $(wildcard ..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+DEP_OBJS	ping/Makefile	/^DEP_OBJS := $(wildcard ..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+DEP_OBJS	tftp/Makefile	/^DEP_OBJS := $(wildcard ..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+DIR_MODE	lib/utils.h	25;"	d
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+DirectoryOfThisScript	lib/coroutine/.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+EVENT_READABLE	lib/eventloop/eventloop.h	22;"	d
+EVENT_WRITABLE	lib/eventloop/eventloop.h	23;"	d
+EXIT_FAILURE	lib/utils.h	28;"	d
+EXIT_SUCCESS	lib/utils.h	27;"	d
+F	3rd/md5.h	12;"	d
+FF	3rd/md5.h	18;"	d
+FILENAME_SIZE	fsync/fsync.h	36;"	d
+FILESYNC_CMD_HEADER_LEN	fsync/fsync.h	55;"	d
+FILESYNC_FILE_HEADER_LEN	fsync/fsync.h	83;"	d
+FILETYPE_REGULAR	fsync/fsync.h	33;"	d
+FILE_MODE	fsync/packet.c	171;"	d	file:
+FILE_MODE	lib/utils.h	24;"	d
+FIRED_EVENT_LEN	lib/eventloop/eventloop.c	22;"	d	file:
+F_CONNECTING	src/practice-16/web/web.h	29;"	d
+F_DONE	src/practice-16/web/web.h	31;"	d
+F_FREE_MEM	lib/pthread/thread.c	27;"	d	file:
+F_READING	src/practice-16/web/web.h	30;"	d
+G	3rd/md5.h	13;"	d
+GET_CMD	src/practice-16/web/web.h	46;"	d
+GG	3rd/md5.h	24;"	d
+G_buf	src/practice-6/echo_server_01.c	/^char G_buf[1024];$/;"	v
+G_cmd	fsync/cli_main.c	/^char * G_cmd = NULL;$/;"	v
+G_config_file	inetd/inetd.c	/^static char  * G_config_file;$/;"	v	file:
+G_conn_fd	fsync/cli_main.c	/^int G_conn_fd = -1;$/;"	v
+G_conn_fd	fsync/main.c	/^int G_conn_fd = 0;$/;"	v
+G_conn_fd_set	src/practice-6/echo_server_01.c	/^int G_conn_fd_set[1024];$/;"	v
+G_conn_fd_set	src/practice-6/echo_server_03.c	/^int G_conn_fd_set[1024];$/;"	v
+G_connfd	src/practice-24/recv_oob.c	/^int G_connfd = -1;$/;"	v
+G_coroutine_map	lib/coroutine/coroutine.c	/^static struct rb_root G_coroutine_map = RB_ROOT;$/;"	v	typeref:struct:rb_root	file:
+G_current_coroutine	lib/coroutine/coroutine.c	/^static struct coroutine_struct * G_current_coroutine = &G_main_coroutine;$/;"	v	typeref:struct:coroutine_struct	file:
+G_current_dir_fd	fsync/fsync_cli.c	/^static int G_current_dir_fd = 0;$/;"	v	file:
+G_current_key	lib/pthread/thread.c	/^static pthread_key_t G_current_key;$/;"	v	file:
+G_dir_path	fsync/fsync.c	/^static char G_dir_path[FILENAME_SIZE];$/;"	v	file:
+G_dirfd	fsync/fsync.c	/^static int G_dirfd = -1;$/;"	v	file:
+G_exc_set	src/practice-6/echo_server_01.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_exc_set	src/practice-6/echo_server_03.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_failed_tests	lib/test.h	/^static int G_failed_tests = 0;$/;"	v
+G_fd_buffer_map	src/practice-6/echo_server_03.c	/^struct socket_buffer * G_fd_buffer_map[1024];$/;"	v	typeref:struct:socket_buffer
+G_file_buf	inetd/main.c	/^static char G_file_buf[512];$/;"	v	file:
+G_file_info_map	fsync/fsync.c	/^static struct dict * G_file_info_map = NULL;$/;"	v	typeref:struct:dict	file:
+G_init_flag	lib/pthread/thread.c	/^static pthread_once_t G_init_flag = PTHREAD_ONCE_INIT;$/;"	v	file:
+G_last_block_received	tftp/tftp.c	/^static char G_last_block_received = 0;$/;"	v	file:
+G_last_died_coroutine	lib/coroutine/coroutine.c	/^static struct coroutine_struct * G_last_died_coroutine;$/;"	v	typeref:struct:coroutine_struct	file:
+G_last_section	inetd/inetd.c	/^static char * G_last_section = NULL;$/;"	v	file:
+G_local_dir	fsync/cli_main.c	/^char * G_local_dir = NULL;$/;"	v
+G_local_file_info_map	fsync/fsync_cli.c	/^static struct dict * G_local_file_info_map = NULL;$/;"	v	typeref:struct:dict	file:
+G_log_fd	lib/log.c	/^static int G_log_fd = -1;$/;"	v	file:
+G_log_file	fsync/main.c	/^static char * G_log_file = "\/log\/today\/filesync-server.log";$/;"	v	file:
+G_log_file	inetd/inetd.c	/^static char * G_log_file = NULL;$/;"	v	file:
+G_log_file	lib/log.c	/^static char * G_log_file = NULL;$/;"	v	file:
+G_log_file	src/practice-14/echo_server.c	/^static char * G_log_file = "\/log\/echo_server.log";$/;"	v	file:
+G_log_file	src/practice-16/web/web.c	/^static char * G_log_file = "\/log\/web.log";$/;"	v	file:
+G_log_file	tftp/tftp_server.c	/^static char * G_log_file = "\/log\/today\/tftp-server.log";$/;"	v	file:
+G_log_level	lib/log.c	/^static char * G_log_level[] = {$/;"	v	file:
+G_log_with_prefix	lib/log.c	/^static int G_log_with_prefix = 1;$/;"	v	file:
+G_main_coroutine	lib/coroutine/coroutine.c	/^static struct coroutine_struct G_main_coroutine;$/;"	v	typeref:struct:coroutine_struct	file:
+G_maxfd	src/practice-16/web/web.c	/^int G_maxfd;$/;"	v
+G_nconn	src/practice-16/web/web.c	/^int G_nconn;$/;"	v
+G_nfiles	src/practice-16/web/web.c	/^int G_nfiles;$/;"	v
+G_nleftconn	src/practice-16/web/web.c	/^int G_nleftconn;$/;"	v
+G_nlefttoread	src/practice-16/web/web.c	/^int G_nlefttoread;$/;"	v
+G_options	inetd/main.c	/^struct opt_def G_options[] = {$/;"	v	typeref:struct:opt_def
+G_pkt	tftp/common.c	/^static char G_pkt[128];$/;"	v	file:
+G_read_set	inetd/inetd.c	/^fd_set G_read_set;$/;"	v
+G_read_set	src/practice-6/echo_server_01.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_read_set	src/practice-6/echo_server_03.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_recv_buffer	fsync/packet.c	/^struct socket_buffer * G_recv_buffer = NULL; $/;"	v	typeref:struct:socket_buffer
+G_recv_buffer	tftp/common.c	/^static char G_recv_buffer[1024];$/;"	v	file:
+G_reload_config_file	inetd/inetd.c	/^static char G_reload_config_file = 0;$/;"	v	file:
+G_remote_dir	fsync/cli_main.c	/^char * G_remote_dir = NULL;$/;"	v
+G_remote_file_info_map	fsync/fsync_cli.c	/^static struct dict * G_remote_file_info_map = NULL;$/;"	v	typeref:struct:dict	file:
+G_remote_ip	fsync/cli_main.c	/^static char * G_remote_ip = NULL;$/;"	v	file:
+G_remote_port	fsync/cli_main.c	/^static int G_remote_port = 0;$/;"	v	file:
+G_request_cnt	ping/ping.c	/^static int G_request_cnt = 0;$/;"	v	file:
+G_rset	src/practice-16/web/web.c	/^fd_set G_rset;$/;"	v
+G_send_buffer	fsync/packet.c	/^struct socket_buffer * G_send_buffer = NULL; $/;"	v	typeref:struct:socket_buffer
+G_send_interval	ping/ping.c	/^static int G_send_interval = 1;$/;"	v	file:
+G_server_conf_cnt	inetd/inetd.c	/^static int G_server_conf_cnt = 0;$/;"	v	file:
+G_server_confs	inetd/inetd.c	/^static struct server_conf G_server_confs[128];$/;"	v	typeref:struct:server_conf	file:
+G_server_map	inetd/inetd.c	/^static struct server_conf * G_server_map[1024];$/;"	v	typeref:struct:server_conf	file:
+G_test_num	lib/test.h	/^static int G_test_num = 0;$/;"	v
+G_tftp_config	tftp/tftp_client.c	/^struct tftp_struct G_tftp_config;$/;"	v	typeref:struct:tftp_struct
+G_tftp_config	tftp/tftp_server.c	/^struct tftp_struct G_tftp_config;$/;"	v	typeref:struct:tftp_struct
+G_total_reply_cnt	ping/ping.c	/^static int G_total_reply_cnt = 0;$/;"	v	file:
+G_total_request_cnt	ping/ping.c	/^static int G_total_request_cnt = 0;$/;"	v	file:
+G_wait_queue	inetd/inetd.c	/^static struct rb_root G_wait_queue = RB_ROOT;$/;"	v	typeref:struct:rb_root	file:
+G_write_set	src/practice-6/echo_server_01.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_write_set	src/practice-6/echo_server_03.c	/^fd_set G_read_set, G_write_set, G_exc_set;$/;"	v
+G_wset	src/practice-16/web/web.c	/^fd_set G_wset;$/;"	v
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+GetCompilationInfoForFile	lib/coroutine/.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+H	3rd/md5.h	14;"	d
+HANDLER	3rd/ini.c	130;"	d	file:
+HH	3rd/md5.h	30;"	d
+I	3rd/md5.h	15;"	d
+IF_ADDR	lib/if_info.h	22;"	d
+IF_ALIAS	lib/if_info.h	37;"	d
+IF_BUF_SIZE	lib/if_info.h	38;"	d
+IF_HADDR	lib/if_info.h	21;"	d
+IF_NAME	lib/if_info.h	20;"	d
+II	3rd/md5.h	36;"	d
+INIT_CID	lib/coroutine/coroutine.c	21;"	d	file:
+INIT_LIST_HEAD	3rd/list.c	/^inline void INIT_LIST_HEAD(struct list_head *list)$/;"	f
+INIT_POLL_FILE_EVENT	lib/eventloop/eventloop.h	51;"	d
+INIT_POLL_TIME_EVENT	lib/eventloop/eventloop.h	52;"	d
+INI_ALLOW_BOM	3rd/ini.h	82;"	d
+INI_ALLOW_INLINE_COMMENTS	3rd/ini.h	95;"	d
+INI_ALLOW_MULTILINE	3rd/ini.h	76;"	d
+INI_ALLOW_NO_VALUE	3rd/ini.h	141;"	d
+INI_ALLOW_REALLOC	3rd/ini.h	116;"	d
+INI_CALL_HANDLER_ON_NEW_SECTION	3rd/ini.h	134;"	d
+INI_CUSTOM_ALLOCATOR	3rd/ini.h	149;"	d
+INI_H	3rd/ini.h	15;"	d
+INI_HANDLER_LINENO	3rd/ini.h	26;"	d
+INI_INITIAL_ALLOC	3rd/ini.h	122;"	d
+INI_INLINE_COMMENT_PREFIXES	3rd/ini.h	98;"	d
+INI_MAX_LINE	3rd/ini.h	109;"	d
+INI_START_COMMENT_PREFIXES	3rd/ini.h	88;"	d
+INI_STOP_ON_FIRST_ERROR	3rd/ini.h	127;"	d
+INI_USE_STACK	3rd/ini.h	103;"	d
+INSPECT_PEEK	lib/buffer.c	24;"	d	file:
+INSPECT_REPLACE	lib/buffer.c	25;"	d	file:
+INT2VOIDP	lib/eventloop/eventloop.c	25;"	d	file:
+INT2VOIDP	lib/log.h	58;"	d
+IOVEC_SZ	lib/buffer.c	20;"	d	file:
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+IsHeaderFile	lib/coroutine/.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+LIBS	fsync/Makefile	/^LIBS := -lm$/;"	m
+LIBS	inetd/Makefile	/^LIBS := -lpthread -lm$/;"	m
+LIBS	lib/pthread/Makefile	/^LIBS 			:= -lpthread -lm$/;"	m
+LIBS	ping/Makefile	/^LIBS := -lpthread -lm$/;"	m
+LIBS	tftp/Makefile	/^LIBS := -lm$/;"	m
+LIB_OBJS	lib/coroutine/Makefile	/^LIB_OBJS		:= $(wildcard .\/$(OBJ_DIR)\/*.o)$/;"	m
+LIB_OBJS	lib/pthread/Makefile	/^LIB_OBJS		:= $(wildcard .\/$(OBJ_DIR)\/*.o)$/;"	m
+LIB_OBJS	lib/timer/Makefile	/^LIB_OBJS		:= $(wildcard .\/$(OBJ_DIR)\/*.o)$/;"	m
+LIB_OBJS	src/Makefile	/^LIB_OBJS		:= $(wildcard ..\/..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+LIB_OBJS	src/practice-16/web/Makefile	/^LIB_OBJS		:= $(wildcard ..\/..\/..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+LIB_OBJS	tests/Makefile	/^LIB_OBJS		:= $(wildcard ..\/lib\/$(OBJ_DIR)\/*.o)$/;"	m
+LIST_HEAD	3rd/list.h	23;"	d
+LIST_HEAD_INIT	3rd/list.h	21;"	d
+LIST_POISON1	3rd/list.c	3;"	d	file:
+LIST_POISON2	3rd/list.c	4;"	d	file:
+LOG_WITH_PREFIX	lib/log.h	17;"	d
+MAKE_PRACTICE	Makefile	/^MAKE_PRACTICE	:= ..\/Makefile$/;"	m
+MAXFILES	src/practice-16/web/web.h	18;"	d
+MAX_BUF_SZ	lib/log.c	29;"	d	file:
+MAX_NAME	3rd/ini.c	39;"	d	file:
+MAX_SECTION	3rd/ini.c	38;"	d	file:
+MD5Decode	3rd/md5.c	/^void MD5Decode(unsigned int *output, unsigned char *input, unsigned int len)$/;"	f
+MD5Encode	3rd/md5.c	/^void MD5Encode(unsigned char *output,unsigned int *input,unsigned int len)$/;"	f
+MD5Final	3rd/md5.c	/^void MD5Final(MD5_CTX *context, unsigned char digest[16])$/;"	f
+MD5Init	3rd/md5.c	/^void MD5Init(MD5_CTX *context)$/;"	f
+MD5Transform	3rd/md5.c	/^void MD5Transform(unsigned int state[4], unsigned char block[64])$/;"	f
+MD5Update	3rd/md5.c	/^void MD5Update(MD5_CTX *context, unsigned char *input, unsigned int inputlen)$/;"	f
+MD5_CTX	3rd/md5.h	/^} MD5_CTX;$/;"	t	typeref:struct:__anon3
+MD5_H	3rd/md5.h	2;"	d
+MD5_SIZE	fsync/fsync.h	35;"	d
+MIN_FREE_SZ	lib/buffer.c	22;"	d	file:
+NO_FREE_USE_DATA_HANDLE	lib/eventloop/eventloop.h	33;"	d
+NULL	3rd/rbtree.h	97;"	d
+OBJ_FILES	fsync/Makefile	/^OBJ_FILES := $(patsubst %.c, $(OBJ_DIR)\/%.o, $(SRC_FILES))$/;"	m
+OBJ_FILES	tftp/Makefile	/^OBJ_FILES := $(patsubst %.c, $(OBJ_DIR)\/%.o, $(SRC_FILES))$/;"	m
+OPT_NOT_FOUND	lib/opt.h	29;"	d
+OPT_NO_VALUE	lib/opt.h	30;"	d
+OPT_OPTIONAL	lib/opt.h	19;"	d
+OPT_REQUIRED	lib/opt.h	18;"	d
+OPT_TYPE_FLOAT	lib/opt.h	26;"	d
+OPT_TYPE_INT	lib/opt.h	25;"	d
+OPT_TYPE_STRING	lib/opt.h	27;"	d
+OPT_VALUE_OMITTED	lib/opt.h	23;"	d
+OPT_VALUE_REUIRED	lib/opt.h	21;"	d
+OPT_VAULE_OPTIONAL	lib/opt.h	22;"	d
+PADDING	3rd/md5.c	/^unsigned char PADDING[] =$/;"	v
+POOL_STATUS_EXITED	lib/pthread/thread_pool.c	24;"	d	file:
+POOL_STATUS_READY	lib/pthread/thread_pool.c	22;"	d	file:
+POOL_STATUS_RUNNING	lib/pthread/thread_pool.c	23;"	d	file:
+PORT_ANY_IPV4	lib/socket.h	21;"	d
+RB_BLACK	3rd/rbtree.h	115;"	d
+RB_CLEAR_NODE	3rd/rbtree.h	148;"	d
+RB_EMPTY_NODE	3rd/rbtree.h	147;"	d
+RB_EMPTY_ROOT	3rd/rbtree.h	146;"	d
+RB_RED	3rd/rbtree.h	114;"	d
+RB_ROOT	3rd/rbtree.h	143;"	d
+ROTATE_LEFT	3rd/md5.h	16;"	d
+RTT_MAX_RXMT_NUM	lib/rtt.c	19;"	d	file:
+RTT_MAX_RXMT_TIMEOUT	lib/rtt.c	18;"	d	file:
+RTT_MIN_RXMT_TIMEOUT	lib/rtt.c	17;"	d	file:
+RTT_RTOCALC	lib/rtt.c	21;"	d	file:
+SBUF_RECV_EOF	lib/buffer.h	24;"	d
+SBUF_RECV_ERR	lib/buffer.h	23;"	d
+SBUF_RECV_OOM	lib/buffer.h	22;"	d
+SEEK_HEAD	lib/buffer.h	19;"	d
+SEEK_TAIL	lib/buffer.h	20;"	d
+SERVER_PORT	src/practice-16/web/web.h	19;"	d
+SIG_ERROR	lib/utils.h	30;"	d
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+SOURCE_EXTENSIONS	lib/coroutine/.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+SRC_FILES	fsync/Makefile	/^SRC_FILES := $(filter-out main.c fsync.c cli_main.c fsync_cli.c, $(SRC_FILES))$/;"	m
+SRC_FILES	tftp/Makefile	/^SRC_FILES := $(filter-out tftp_server.c tftp_client.c, $(SRC_FILES))$/;"	m
+SUB_DIRS	Makefile	/^SUB_DIRS = `find .\/src -maxdepth 1 -type d | awk '{if (NR > 1) print}'`$/;"	m
+Settings	.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+Settings	lib/coroutine/.ycm_extra_conf.py	/^def Settings( **kwargs ):$/;"	f
+TEST_COND	lib/test.h	33;"	d
+TEST_EXES	src/Makefile	/^TEST_EXES		:= $(patsubst %.c, $(BUILD_DIR)\/%, $(SRC_FILES))$/;"	m
+TEST_EXES	tests/Makefile	/^TEST_EXES		:= $(patsubst %.c, $(BIN_DIR)\/%, $(SRC_FILES))$/;"	m
+TEST_REPORT	lib/test.h	45;"	d
+TFTP_CODE_ACK	tftp/tftp.h	26;"	d
+TFTP_CODE_DATA	tftp/tftp.h	25;"	d
+TFTP_CODE_ERROR	tftp/tftp.h	27;"	d
+TFTP_CODE_RRQ	tftp/tftp.h	23;"	d
+TFTP_CODE_WRQ	tftp/tftp.h	24;"	d
+TH_EXITED	lib/pthread/thread.c	25;"	d	file:
+TH_READY	lib/pthread/thread.c	23;"	d	file:
+TH_RUNNING	lib/pthread/thread.c	24;"	d	file:
+TVN_BITS	lib/timer/timer_manager.c	29;"	d	file:
+TVN_MASK	lib/timer/timer_manager.c	33;"	d	file:
+TVN_size	lib/timer/timer_manager.c	31;"	d	file:
+TVR_BITS	lib/timer/timer_manager.c	28;"	d	file:
+TVR_MASK	lib/timer/timer_manager.c	32;"	d	file:
+TVR_SIZE	lib/timer/timer_manager.c	30;"	d	file:
+VALUE	lib/min_heap.c	87;"	d	file:
+_CRT_SECURE_NO_WARNINGS	3rd/ini.c	15;"	d	file:
+_LINUX_LIST_H	3rd/list.h	2;"	d
+_LINUX_RBTREE_H	3rd/rbtree.h	95;"	d
+_LOG_DEBUG	lib/log.h	19;"	d
+_LOG_ERROR	lib/log.h	22;"	d
+_LOG_FATAL	lib/log.h	23;"	d
+_LOG_INFO	lib/log.h	20;"	d
+_LOG_WARN	lib/log.h	21;"	d
+__BUFFER_H	lib/buffer.h	15;"	d
+__COLOR_BLUE	lib/test.h	28;"	d
+__COLOR_GREEN	lib/test.h	26;"	d
+__COLOR_NONE	lib/test.h	24;"	d
+__COLOR_RED	lib/test.h	25;"	d
+__COLOR_YELLOW	lib/test.h	27;"	d
+__COND_H	lib/pthread/cond.h	15;"	d
+__COROUTINE_DEBUG	lib/coroutine/coroutine.h	17;"	d
+__COROUTINE_H	lib/coroutine/coroutine.h	15;"	d
+__DEBUG_H	fsync/debug.h	15;"	d
+__DEFS_H	3rd/defs.h	15;"	d
+__DICT_H	lib/dict.h	15;"	d
+__EVENTLOOP_H	lib/eventloop/eventloop.h	15;"	d
+__FILESYNC_H	fsync/fsync.h	15;"	d
+__FILE_LOCK_H	lib/file_lock.h	15;"	d
+__FSYNC_BUFFER_H	fsync/packet.h	15;"	d
+__FSYNC_SOCKET_H	fsync/network.h	15;"	d
+__FSYNC_UTILS_H	fsync/utils.h	15;"	d
+__IF_INFO_H	lib/if_info.h	15;"	d
+__LIB_H	lib/lib.h	15;"	d
+__LOG_H	lib/log.h	15;"	d
+__MIN_HEAP_H	lib/min_heap.h	15;"	d
+__MUTEX_H	lib/pthread/mutex.h	15;"	d
+__OPT_H	lib/opt.h	15;"	d
+__POLL_API_H	lib/eventloop/poll_api.h	15;"	d
+__RTT_H	lib/rtt.h	15;"	d
+__SOCKET_H	lib/socket.h	15;"	d
+__TEST_H	lib/test.h	15;"	d
+__TFTP_H	tftp/tftp.h	15;"	d
+__THREAD_H	lib/pthread/thread.h	15;"	d
+__THREAD_POOL_H	lib/pthread/thread_pool.h	15;"	d
+__TIMER_H	lib/timer/timer.h	15;"	d
+__TIMER_MANAGER_H	lib/timer/timer_manager.h	15;"	d
+__USE_EPOLL__	lib/eventloop/eventloop.h	20;"	d
+__UTILS_H	lib/utils.h	15;"	d
+__WEB_H	src/practice-16/web/web.h	15;"	d
+__destory_coroutine	lib/coroutine/coroutine.c	/^inline static void __destory_coroutine(struct coroutine_struct * co)$/;"	f	file:
+__find_parent	lib/coroutine/coroutine.c	/^inline static struct coroutine_struct * __find_parent($/;"	f	file:
+__get_current_coroutine	lib/coroutine/coroutine.c	/^inline static struct coroutine_struct * __get_current_coroutine()$/;"	f	file:
+__get_next_cid	lib/coroutine/coroutine.c	/^inline static cid_t __get_next_cid() $/;"	f	file:
+__init_context	lib/coroutine/coroutine.c	/^static void __init_context(struct coroutine_struct * co)$/;"	f	file:
+__init_main_coroutine	lib/coroutine/coroutine.c	/^inline static void __init_main_coroutine(void)$/;"	f	file:
+__insert_into_map	lib/coroutine/coroutine.c	/^static void __insert_into_map(struct coroutine_struct * co)$/;"	f	file:
+__list_add	3rd/list.c	/^static inline void __list_add(struct list_head *new,$/;"	f	file:
+__list_cut_position	3rd/list.c	/^static inline void __list_cut_position(struct list_head *list,$/;"	f	file:
+__list_del	3rd/list.c	/^static inline void __list_del(struct list_head * prev, struct list_head * next)$/;"	f	file:
+__list_splice	3rd/list.c	/^static inline void __list_splice(const struct list_head *list,$/;"	f	file:
+__lock_register	lib/file_lock.h	18;"	d
+__main	lib/coroutine/coroutine.c	/^static void __main(struct coroutine_struct * co)$/;"	f	file:
+__rb_erase_color	3rd/rbtree.c	/^static void __rb_erase_color(struct rb_node *node, struct rb_node *parent,$/;"	f	file:
+__rb_rotate_left	3rd/rbtree.c	/^static void __rb_rotate_left(struct rb_node *node, struct rb_root *root)$/;"	f	file:
+__rb_rotate_right	3rd/rbtree.c	/^static void __rb_rotate_right(struct rb_node *node, struct rb_root *root)$/;"	f	file:
+__remove_from_map	lib/coroutine/coroutine.c	/^static void __remove_from_map(struct coroutine_struct * co)$/;"	f	file:
+__search_map	lib/coroutine/coroutine.c	/^static struct coroutine_struct * __search_map(cid_t cid)$/;"	f	file:
+__set_coroutine_attr	lib/coroutine/coroutine.c	/^static void __set_coroutine_attr($/;"	f	file:
+__set_current_coroutine	lib/coroutine/coroutine.c	/^inline static void * __set_current_coroutine(struct coroutine_struct * co)$/;"	f	file:
+_add_timer	lib/timer/timer_manager.c	/^static void _add_timer(struct timer_manager * manager, $/;"	f	file:
+_adjust_buffer	lib/buffer.c	/^static void _adjust_buffer(struct socket_buffer * socket_buffer)$/;"	f	file:
+_buffer_block	lib/buffer.c	/^struct _buffer_block {$/;"	s	file:
+_calc_cksum	ping/ping.c	/^static uint16_t _calc_cksum(uint16_t * addr, int len)$/;"	f	file:
+_calc_tto	ping/ping.c	/^static int _calc_tto($/;"	f	file:
+_calcuate_time_from_now	lib/eventloop/eventloop.c	/^static void _calcuate_time_from_now($/;"	f	file:
+_cascade_add_timer	lib/timer/timer_manager.c	/^static void _cascade_add_timer($/;"	f	file:
+_check_sender_alive	tftp/tftp.c	/^static int _check_sender_alive(struct eventloop * loop, $/;"	f	file:
+_cleanup	lib/pthread/thread.c	/^static void _cleanup(void * arg)$/;"	f	file:
+_cleanup	lib/pthread/thread_pool.c	/^static void _cleanup(void * arg)$/;"	f	file:
+_copy_range	lib/buffer.c	/^static void _copy_range(struct socket_buffer * dst, size_t dst_start, $/;"	f	file:
+_create_socket_fds	inetd/inetd.c	/^static void _create_socket_fds(void)$/;"	f	file:
+_create_sockfd	inetd/inetd.c	/^static int _create_sockfd(struct server_conf * conf)$/;"	f	file:
+_debug_check_buffer	lib/buffer.c	/^static void _debug_check_buffer(struct socket_buffer * buffer)$/;"	f	file:
+_destory_timers	lib/timer/timer_manager.c	/^static void _destory_timers(struct list_head * list) $/;"	f	file:
+_destroy	lib/eventloop/eventloop.c	/^static void _destroy(struct eventloop * loop)$/;"	f	file:
+_dict_add	lib/dict.c	/^static int _dict_add(struct dict * dict, void * key, void * val)$/;"	f	file:
+_dict_find	lib/dict.c	/^static struct dict_entry * _dict_find(struct dict * dict, void * key)$/;"	f	file:
+_dict_insert	lib/dict.c	/^static void  _dict_insert(struct dict * dict, struct dict_entry * entry)$/;"	f	file:
+_enlarge_capacity_at	lib/buffer.c	/^static void _enlarge_capacity_at(struct socket_buffer * socket_buffer, $/;"	f	file:
+_event_dict_val_destroy	lib/eventloop/eventloop.c	/^static void _event_dict_val_destroy(void * val)$/;"	f	file:
+_free_dict_entry	lib/dict.c	/^static void _free_dict_entry(struct dict * dict, $/;"	f	file:
+_free_node	inetd/inetd.c	/^static void _free_node(struct rb_node * node)$/;"	f	file:
+_free_opt_node	lib/opt.c	/^static void _free_opt_node(struct rb_node * node)$/;"	f	file:
+_free_queue	inetd/inetd.c	/^void _free_queue(struct rb_root * wait_queue)$/;"	f
+_free_size_at_head	lib/buffer.c	/^static size_t _free_size_at_head(struct socket_buffer * socket_buffer)$/;"	f	file:
+_free_size_at_tail	lib/buffer.c	/^static size_t _free_size_at_tail(struct socket_buffer * socket_buffer)$/;"	f	file:
+_get_all_ifs	lib/if_info.c	/^static int _get_all_ifs(int sockfd, struct ifreq ** ifreq)$/;"	f	file:
+_get_buffer_vector	lib/buffer.c	/^static size_t _get_buffer_vector(struct socket_buffer * socket_buffer, $/;"	f	file:
+_get_icmp_datagram	ping/ping.c	/^static int _get_icmp_datagram(void ** icmp_buf)$/;"	f	file:
+_get_info	lib/if_info.c	/^static int _get_info(int sockfd, struct if_info * ifi, $/;"	f	file:
+_get_sockfd	ping/ping.c	/^static int _get_sockfd(void)$/;"	f	file:
+_get_timestamp	ping/ping.c	/^static void _get_timestamp(struct timespec * tp)$/;"	f	file:
+_init	lib/pthread/thread.c	/^static void _init(void)$/;"	f	file:
+_init_set_proctitle	lib/utils.c	/^static int _init_set_proctitle(char ** argv, char ** saved_argv)$/;"	f	file:
+_init_sockfd_set	inetd/inetd.c	/^static int _init_sockfd_set(struct server_conf ** servers) $/;"	f	file:
+_insert_into_map	lib/opt.c	/^static void _insert_into_map(struct rb_root * opt_map, struct _opt_node * opt)$/;"	f	file:
+_insert_into_queue	inetd/inetd.c	/^static void _insert_into_queue($/;"	f	file:
+_log	lib/log.c	/^static void _log($/;"	f	file:
+_log_to_file	lib/log.c	/^void _log_to_file(char * log) $/;"	f
+_main	lib/pthread/thread.c	/^static void * _main(void * args)$/;"	f	file:
+_main	lib/pthread/thread_pool.c	/^static void * _main(void * arg)$/;"	f	file:
+_newdict_entry	lib/dict.c	/^static struct dict_entry * _newdict_entry(void)$/;"	f	file:
+_opt_map_new	lib/opt.c	/^static struct rb_root * _opt_map_new(struct opt_def * opt_defs, int len)$/;"	f	file:
+_opt_node	lib/opt.c	/^struct _opt_node {$/;"	s	file:
+_parse_handler	inetd/inetd.c	/^static int _parse_handler(void * server_confs, $/;"	f	file:
+_parse_opt_def	lib/opt.c	/^static int _parse_opt_def(struct opt_def * opt_defs, int len, $/;"	f	file:
+_poll_ctl	lib/eventloop/event_epoll.c	/^static int _poll_ctl(struct poll_struct * poll, int op, int fd, int events)$/;"	f	file:
+_process_connection	inetd/inetd.c	/^static int _process_connection(int sockfd)$/;"	f	file:
+_rb_tree_destory	lib/dict.c	/^static void _rb_tree_destory(struct dict * dict, struct rb_node * root)$/;"	f	file:
+_recv	tftp/common.c	/^static int _recv(int fd, char * data, int len)$/;"	f	file:
+_recv_data_block	tftp/tftp.c	/^static int _recv_data_block(struct eventloop * loop, int fd, void * user_data)$/;"	f	file:
+_reload_config_file	inetd/inetd.c	/^static int _reload_config_file(void) $/;"	f	file:
+_remove_from_queue	inetd/inetd.c	/^static void _remove_from_queue($/;"	f	file:
+_resize	lib/min_heap.c	/^static int _resize(struct heap_struct * heap, int cnt)$/;"	f	file:
+_retransmit_block	tftp/tftp.c	/^static int _retransmit_block(struct eventloop * loop, $/;"	f	file:
+_root_wheel	lib/timer/timer_manager.c	/^struct _root_wheel {$/;"	s	file:
+_round_rto	lib/rtt.c	/^static int _round_rto(float rto)$/;"	f	file:
+_search_dir_recursively	fsync/utils.c	/^static int _search_dir_recursively(char * dirpath, int len, int size, $/;"	f	file:
+_search_dir_recursively	src/practice-13/test_search_dir.c	/^static int _search_dir_recursively(char * dirpath, int len, int size, $/;"	f	file:
+_search_map	lib/opt.c	/^static struct _opt_node * _search_map(struct rb_root * opt_map, char * opt)$/;"	f	file:
+_search_queue	inetd/inetd.c	/^static struct wait_queue * _search_queue($/;"	f	file:
+_send	tftp/common.c	/^static int _send(int fd, char * data, int len)$/;"	f	file:
+_send_block	tftp/tftp.c	/^static int _send_block(struct eventloop * loop, $/;"	f	file:
+_set_expired_time	lib/eventloop/eventloop.c	/^static void _set_expired_time(struct timeval * interval)$/;"	f	file:
+_set_opt	lib/opt.c	/^static struct _opt_node *  _set_opt(struct rb_root * opt_map, char * opt)$/;"	f	file:
+_shift_down	lib/min_heap.c	/^static void _shift_down(struct heap_struct * heap, int idx)$/;"	f	file:
+_shift_up	lib/min_heap.c	/^static void _shift_up(struct heap_struct * heap, int idx)$/;"	f	file:
+_sig_alarm	ping/ping.c	/^static void _sig_alarm(int signo)$/;"	f	file:
+_sig_child	inetd/inetd.c	/^static void _sig_child(int signo)$/;"	f	file:
+_sig_func	lib/utils.c	/^static void _sig_func(int signo)$/;"	f	file:
+_sig_hub	inetd/inetd.c	/^static void _sig_hub(int signo)$/;"	f	file:
+_socket_buffer_get	lib/buffer.c	/^static int _socket_buffer_get(struct socket_buffer * socket_buffer, $/;"	f	file:
+_socket_buffer_inspect	lib/buffer.c	/^static int _socket_buffer_inspect(struct socket_buffer * socket_buffer, $/;"	f	file:
+_socket_buffer_peek	lib/buffer.c	/^static int _socket_buffer_peek($/;"	f	file:
+_socket_buffer_seek	lib/buffer.c	/^static size_t _socket_buffer_seek(struct socket_buffer * socket_buffer, $/;"	f	file:
+_socket_buffer_write	lib/buffer.c	/^static int _socket_buffer_write(struct socket_buffer * socket_buffer, $/;"	f	file:
+_start_server	inetd/inetd.c	/^static int _start_server(void)$/;"	f	file:
+_swap	lib/min_heap.c	/^static void _swap(void ** val1, void ** val2)$/;"	f	file:
+_task_node	lib/pthread/thread_pool.c	/^struct _task_node {$/;"	s	file:
+_thread_args	lib/pthread/thread_pool.c	/^struct _thread_args {$/;"	s	file:
+_thread_node	lib/pthread/thread_pool.c	/^struct _thread_node {$/;"	s	file:
+_time_event_heap_compare	lib/eventloop/eventloop.c	/^static int _time_event_heap_compare(void * val1, void * val2)$/;"	f	file:
+_timing_wheel_update	lib/timer/timer_manager.c	/^static void _timing_wheel_update(struct timer_manager * manager)$/;"	f	file:
+_update_last_recv_time	tftp/tftp.c	/^static void _update_last_recv_time(void)$/;"	f	file:
+_wheel	lib/timer/timer_manager.c	/^struct _wheel {$/;"	s	file:
+accept_ipv4	lib/socket.c	/^int accept_ipv4(int sockfd, struct sockaddr_in * addr)$/;"	f
+active_cnts	lib/pthread/thread_pool.c	/^    int active_cnts; \/* active thread cnts *\/$/;"	m	struct:thread_pool	file:
+addr	lib/if_info.h	/^    char addr[IF_ADDR];$/;"	m	struct:if_info
+args	lib/coroutine/coroutine.c	/^    void * args;$/;"	m	struct:coroutine_struct	file:
+args	lib/pthread/thread.c	/^    void * args;$/;"	m	struct:thread_struct	file:
+args	lib/pthread/thread_pool.h	/^    void * args;    $/;"	m	struct:task_struct
+args	lib/timer/timer.h	/^    void * args;$/;"	m	struct:timer_struct
+base	lib/rtt.h	/^    int base;$/;"	m	struct:rtt_info
+bind_ipv4	lib/socket.c	/^int bind_ipv4(int sockfd, const struct sockaddr_in * addr)$/;"	f
+block_nr	lib/buffer.c	/^    size_t block_nr;$/;"	m	struct:socket_buffer	file:
+block_nr	tftp/tftp.h	/^    int block_nr;$/;"	m	struct:tftp_block_hdr
+block_nr	tftp/tftp.h	/^    uint16_t block_nr;$/;"	m	struct:tftp_ack_pkt
+block_nr	tftp/tftp.h	/^    uint16_t block_nr;$/;"	m	struct:tftp_data_pkt
+block_size	tftp/tftp.h	/^    int block_size;$/;"	m	struct:tftp_struct
+block_sz	lib/buffer.c	/^    size_t block_sz;$/;"	m	struct:socket_buffer	file:
+blocks_dict_type	tftp/common.c	/^static struct dict_type blocks_dict_type = {$/;"	v	typeref:struct:dict_type	file:
+blocks_waiting_ack	tftp/tftp.h	/^    struct dict * blocks_waiting_ack;$/;"	m	struct:tftp_struct	typeref:struct:tftp_struct::dict
+broadaddr	lib/if_info.h	/^    char broadaddr[IF_ADDR];$/;"	m	struct:if_info
+buffer	3rd/md5.h	/^	unsigned char buffer[64];   $/;"	m	struct:__anon3
+bufsize	lib/utils.h	/^    size_t bufsize;$/;"	m	struct:msg_info
+callback	lib/timer/tests.c	/^void callback(struct timer_struct * timer, void * args)$/;"	f
+callback	lib/timer/timer.h	/^    timer_callback_t callback; $/;"	m	struct:timer_struct
+capacity	lib/min_heap.c	/^    int capacity;$/;"	m	struct:heap_struct	file:
+cid	lib/coroutine/coroutine.c	/^    cid_t cid;$/;"	m	struct:coroutine_struct	file:
+cid_t	lib/coroutine/coroutine.h	/^typedef int cid_t;$/;"	t
+cmd	fsync/fsync.h	/^    uint8_t cmd;     \/* command *\/ $/;"	m	struct:filesync_cmd_header
+cmd_payload_ack	fsync/fsync.h	/^struct cmd_payload_ack {$/;"	s
+cmd_payload_req	fsync/fsync.h	/^struct cmd_payload_req {$/;"	s
+co1	lib/coroutine/test.c	/^cid_t co1, co2;$/;"	v
+co2	lib/coroutine/test.c	/^cid_t co1, co2;$/;"	v
+code	tftp/tftp.h	/^    uint16_t code;$/;"	m	struct:tftp_ack_pkt
+code	tftp/tftp.h	/^    uint16_t code;$/;"	m	struct:tftp_data_pkt
+code	tftp/tftp.h	/^    uint16_t code;$/;"	m	struct:tftp_error_pkt
+code	tftp/tftp.h	/^    uint16_t code;$/;"	m	struct:tftp_req_pkt
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+compilation_database_folder	lib/coroutine/.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+compute_file_md5	fsync/utils.c	/^int compute_file_md5(int fd, unsigned char * md5_buf) $/;"	f
+cond_broadcast	lib/pthread/cond.h	/^static inline int cond_broadcast(pthread_cond_t * cond)$/;"	f
+cond_destroy	lib/pthread/cond.h	/^static inline int cond_destroy(pthread_cond_t * cond)$/;"	f
+cond_init	lib/pthread/cond.h	/^static inline int cond_init(pthread_cond_t * cond, pthread_condattr_t * attr)$/;"	f
+cond_signal	lib/pthread/cond.h	/^static inline int cond_signal(pthread_cond_t * cond)$/;"	f
+cond_timewait	lib/pthread/cond.h	/^static inline int cond_timewait(pthread_cond_t * cond, $/;"	f
+cond_wait	lib/pthread/cond.h	/^static inline int cond_wait(pthread_cond_t * cond, pthread_mutex_t * mutex)$/;"	f
+conf	inetd/inetd.c	/^    struct server_conf * conf;$/;"	m	struct:wait_queue	typeref:struct:wait_queue::server_conf	file:
+connect_ipv4	lib/socket.c	/^int connect_ipv4(int sockfd, struct sockaddr_in * addr)$/;"	f
+connect_timeo	lib/utils.c	/^int connect_timeo(int sockfd, struct sockaddr_in * server_addr, int nsec)$/;"	f
+connected	tftp/tftp.h	/^    char connected; \/* already invoked 'connect' on socket if True *\/$/;"	m	struct:tftp_struct
+container_of	3rd/defs.h	26;"	d
+container_of	3rd/rbtree.h	107;"	d
+context	lib/coroutine/coroutine.c	/^    ucontext_t context;$/;"	m	struct:coroutine_struct	file:
+coroutine_attr_t	lib/coroutine/coroutine.h	/^} coroutine_attr_t;$/;"	t	typeref:struct:__anon1
+coroutine_cancel	lib/coroutine/coroutine.c	/^int coroutine_cancel(cid_t cid)$/;"	f
+coroutine_create	lib/coroutine/coroutine.c	/^cid_t coroutine_create($/;"	f
+coroutine_func_t	lib/coroutine/coroutine.h	/^typedef void (* coroutine_func_t)(void * args);$/;"	t
+coroutine_get_current	lib/coroutine/coroutine.c	/^cid_t coroutine_get_current()$/;"	f
+coroutine_get_main	lib/coroutine/coroutine.c	/^inline cid_t coroutine_get_main()$/;"	f
+coroutine_str_status	lib/coroutine/coroutine.c	/^char * coroutine_str_status(int status)$/;"	f
+coroutine_struct	lib/coroutine/coroutine.c	/^struct coroutine_struct {$/;"	s	file:
+coroutine_switch	lib/coroutine/coroutine.c	/^int coroutine_switch(cid_t cid) $/;"	f
+count	3rd/md5.h	/^	unsigned int count[2];$/;"	m	struct:__anon3
+create_file	fsync/utils.c	/^int create_file(char * dirpath, char * filename, mode_t mode)$/;"	f
+create_file	src/practice-13/test_mkdir.c	/^int create_file(char * dirpath, char * filename, mode_t mode)$/;"	f
+daemon_init	lib/utils.c	/^int daemon_init(void)$/;"	f
+data	lib/buffer.c	/^    char data[0];$/;"	m	struct:_buffer_block	file:
+data	tftp/tftp.h	/^    char * data;$/;"	m	struct:tftp_data_pkt
+data	tftp/tftp.h	/^    char data[0];$/;"	m	struct:tftp_block_hdr
+database	.ycm_extra_conf.py	/^  database = None$/;"	v
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+database	lib/coroutine/.ycm_extra_conf.py	/^  database = None$/;"	v
+database	lib/coroutine/.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+daytime_server	src/practice-5/daytime_server.c	/^void daytime_server(void)$/;"	f
+deleted	lib/eventloop/eventloop.c	/^    char deleted; \/* BOOL, deleted when true *\/$/;"	m	struct:time_event	file:
+delta	lib/timer/timer_manager.c	/^    uint32_t delta; \/* nsec *\/$/;"	m	struct:timer_manager	file:
+desc	lib/opt.h	/^    char * desc;$/;"	m	struct:opt_def
+dict	lib/dict.c	/^struct dict {$/;"	s	file:
+dict_add	lib/dict.c	/^int dict_add(struct dict * dict, void * key, void * val)$/;"	f
+dict_create	lib/dict.c	/^struct dict * dict_create(struct dict_type * type)$/;"	f
+dict_delete	lib/dict.c	/^void dict_delete(struct dict * dict, void * key)$/;"	f
+dict_destroy	lib/dict.c	/^void dict_destroy(struct dict * dict)$/;"	f
+dict_entry	lib/dict.c	/^struct dict_entry {$/;"	s	file:
+dict_fetch_key	lib/dict.c	/^inline void * dict_fetch_key(struct dict_entry * entry)$/;"	f
+dict_fetch_val	lib/dict.c	/^inline void * dict_fetch_val(struct dict_entry * entry)$/;"	f
+dict_find	lib/dict.c	/^int dict_find(struct dict * dict, void * key, void ** val)$/;"	f
+dict_first	lib/dict.c	/^inline struct dict_entry * dict_first(struct dict * dict)$/;"	f
+dict_for_each	tests/test_dict.c	/^void dict_for_each(struct dict * dict)$/;"	f
+dict_next	lib/dict.c	/^inline struct dict_entry * dict_next(struct dict_entry * entry)$/;"	f
+dict_size	lib/dict.c	/^inline int dict_size(struct dict * dict)$/;"	f
+dict_type	lib/dict.h	/^struct dict_type {$/;"	s
+dict_update	lib/dict.c	/^int dict_update(struct dict * dict, void * key, void * val)$/;"	f
+die	lib/log.h	43;"	d
+die_unexpectedly	fsync/utils.c	/^void die_unexpectedly(const char * error)$/;"	f
+die_with_errno	lib/log.h	50;"	d
+do_download	fsync/fsync_cli.c	/^void do_download(void)$/;"	f
+do_download_req	fsync/fsync.c	/^static void do_download_req(struct filesync_cmd_header * cmd_hdr)$/;"	f	file:
+do_sync_info	fsync/fsync_cli.c	/^void do_sync_info(void)$/;"	f
+do_sync_info_req	fsync/fsync.c	/^static void do_sync_info_req(struct filesync_cmd_header * cmd_hdr)$/;"	f	file:
+do_task	lib/pthread/test.c	/^void do_task(void * args)$/;"	f
+do_upload	fsync/fsync_cli.c	/^void do_upload(void)$/;"	f
+do_upload_req	fsync/fsync.c	/^static void do_upload_req(struct filesync_cmd_header * cmd_hdr)$/;"	f	file:
+dstaddr	lib/if_info.h	/^    char dstaddr[IF_ADDR];$/;"	m	struct:if_info
+dstaddr	lib/utils.h	/^    struct sockaddr_in dstaddr;$/;"	m	struct:msg_info	typeref:struct:msg_info::sockaddr_in
+dump_trace	lib/log.c	/^void dump_trace(unsigned char max_depth)$/;"	f
+echo_client	src/practice-14/echo_client.c	/^int echo_client(struct sockaddr_in * server_addr, struct sockaddr_in * client_addr)$/;"	f
+echo_client	src/practice-20/echo_client.c	/^int echo_client($/;"	f
+echo_client	src/practice-5/echo_client.c	/^int echo_client(const char * ip, int port)$/;"	f
+echo_client	src/practice-6/echo_client.c	/^int echo_client(const char * ip, int port)$/;"	f
+echo_client	src/practice-8/echo_client.c	/^int echo_client(const char * ip, int port)$/;"	f
+echo_server	src/practice-14/echo_server.c	/^int echo_server(struct sockaddr_in * server_addr, $/;"	f
+echo_server	src/practice-20/echo_server.c	/^int echo_server(struct sockaddr_in * server_addr, $/;"	f
+echo_server	src/practice-5/echo_server.c	/^int echo_server(const char * ip, int port)$/;"	f
+echo_server	src/practice-6/echo_server.c	/^int echo_server(const char * ip, int port)$/;"	f
+echo_server	src/practice-8/echo_server.c	/^int echo_server(struct sockaddr_in * server_addr, $/;"	f
+echo_server_01	src/practice-6/echo_server_01.c	/^int echo_server_01(const char * ip, int port)$/;"	f
+echo_server_01	src/practice-6/echo_server_03.c	/^int echo_server_01(const char * ip, int port)$/;"	f
+epoll_fd	lib/eventloop/event_epoll.c	/^    int epoll_fd;$/;"	m	struct:poll_struct	file:
+error_code	tftp/tftp.h	/^    uint16_t error_code;$/;"	m	struct:tftp_error_pkt
+error_msg	tftp/tftp.h	/^    char * error_msg;$/;"	m	struct:tftp_error_pkt
+eventloop	lib/eventloop/eventloop.c	/^struct eventloop {$/;"	s	file:
+eventloop_create	lib/eventloop/eventloop.c	/^struct eventloop * eventloop_create(void)$/;"	f
+eventloop_destroy	lib/eventloop/eventloop.c	/^void eventloop_destroy(struct eventloop * loop)$/;"	f
+eventloop_events_dispatch	lib/eventloop/eventloop.c	/^void eventloop_events_dispatch(struct eventloop * loop)$/;"	f
+eventloop_file_event_add	lib/eventloop/eventloop.c	/^int eventloop_file_event_add($/;"	f
+eventloop_file_event_create	lib/eventloop/eventloop.c	/^int eventloop_file_event_create($/;"	f
+eventloop_file_event_del	lib/eventloop/eventloop.c	/^int eventloop_file_event_del($/;"	f
+eventloop_stop	lib/eventloop/eventloop.c	/^void eventloop_stop(struct eventloop * loop)$/;"	f
+eventloop_time_event_create	lib/eventloop/eventloop.c	/^time_event_id eventloop_time_event_create($/;"	f
+eventloop_time_event_del	lib/eventloop/eventloop.c	/^void eventloop_time_event_del(struct eventloop * loop, time_event_id time_id)$/;"	f
+events	lib/eventloop/event_epoll.c	/^    struct epoll_event events[32];$/;"	m	struct:poll_struct	typeref:struct:poll_struct::epoll_event	file:
+events	lib/eventloop/eventloop.c	/^    int events;$/;"	m	struct:file_event	file:
+events	lib/eventloop/eventloop.h	/^    int events;$/;"	m	struct:poll_file_event
+events	lib/eventloop/poll_api.h	/^    int events;$/;"	m	struct:poll_event
+expiration	lib/timer/timer.h	/^    uint32_t expiration; \/* milliseconds *\/ $/;"	m	struct:timer_struct
+expired_timers	lib/timer/timer_manager.c	/^    struct list_head expired_timers;$/;"	m	struct:timer_manager	typeref:struct:timer_manager::list_head	file:
+f_host	src/practice-16/web/web.h	/^    char * f_host;$/;"	m	struct:file
+f_name	src/practice-16/web/web.h	/^    char * f_name;$/;"	m	struct:file
+fd	lib/eventloop/poll_api.h	/^    int fd;$/;"	m	struct:poll_event
+fd	tftp/tftp.h	/^    int fd; \/* file fd *\/$/;"	m	struct:tftp_struct
+file	src/practice-16/web/web.c	/^struct file file[MAXFILES];$/;"	v	typeref:struct:file
+file	src/practice-16/web/web.h	/^struct file {$/;"	s
+file_event	lib/eventloop/eventloop.c	/^struct file_event {$/;"	s	file:
+file_event_callback_t	lib/eventloop/eventloop.h	/^typedef int (* file_event_callback_t)(struct eventloop * loop, $/;"	t
+file_event_dict_type	lib/eventloop/eventloop.c	/^struct dict_type file_event_dict_type = {$/;"	v	typeref:struct:dict_type
+file_event_map	lib/eventloop/eventloop.c	/^    struct dict * file_event_map;$/;"	m	struct:eventloop	typeref:struct:eventloop::dict	file:
+file_info_map_type	fsync/packet.c	/^struct dict_type file_info_map_type = {$/;"	v	typeref:struct:dict_type
+file_mode	fsync/fsync.h	/^    uint8_t file_mode;      \/* not used *\/$/;"	m	struct:filesync_file_header
+file_rlock	lib/file_lock.h	30;"	d
+file_rlock_wait	lib/file_lock.h	33;"	d
+file_type	fsync/fsync.h	/^    uint8_t file_type;      \/* not used *\/$/;"	m	struct:filesync_file_header
+file_unlock	lib/file_lock.h	42;"	d
+file_wlock	lib/file_lock.h	36;"	d
+file_wlock_wait	lib/file_lock.h	39;"	d
+filename	fsync/fsync.h	/^    char filename[FILENAME_SIZE];$/;"	m	struct:cmd_payload_ack
+filename	fsync/fsync.h	/^    char filename[FILENAME_SIZE];$/;"	m	struct:cmd_payload_req
+filename	fsync/fsync.h	/^    char filename[FILENAME_SIZE];$/;"	m	struct:filesync_file_header
+filename	tftp/tftp.h	/^    char * filename;$/;"	m	struct:tftp_req_pkt
+filename	tftp/tftp.h	/^    char * filename;$/;"	m	struct:tftp_struct
+filename_len	fsync/fsync.h	/^    uint16_t filename_len;  \/* length of filename *\/$/;"	m	struct:filesync_file_header
+filesize	tftp/tftp.h	/^    int filesize;$/;"	m	struct:tftp_struct
+filesync_cmd_header	fsync/fsync.h	/^struct filesync_cmd_header {$/;"	s
+filesync_file_header	fsync/fsync.h	/^struct filesync_file_header {$/;"	s
+filesync_server	fsync/fsync.c	/^void filesync_server(void) $/;"	f
+find_chars_or_comment	3rd/ini.c	/^static char* find_chars_or_comment(const char* s, const char* chars)$/;"	f	file:
+fired_events	lib/eventloop/eventloop.c	/^    struct poll_event fired_events[FIRED_EVENT_LEN];$/;"	m	struct:eventloop	typeref:struct:eventloop::poll_event	file:
+first_block	lib/buffer.c	/^    struct _buffer_block * first_block;$/;"	m	struct:socket_buffer	typeref:struct:socket_buffer::_buffer_block	file:
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+flags	lib/coroutine/.ycm_extra_conf.py	/^flags = [$/;"	v
+flags	lib/if_info.h	/^    short flags;$/;"	m	struct:if_info
+flags	lib/opt.h	/^    unsigned int flags;$/;"	m	struct:opt_def
+flags	lib/pthread/thread.c	/^    int flags;$/;"	m	struct:thread_struct	file:
+flags	lib/utils.h	/^    int flags;$/;"	m	struct:msg_info
+flags	src/practice-16/web/web.h	/^    int flags;$/;"	m	struct:file
+found	lib/opt.c	/^    char found;$/;"	m	struct:_opt_node	file:
+free_if_info	lib/if_info.c	/^void free_if_info(struct if_info * if_info)$/;"	f
+free_opt_map	lib/opt.c	/^void free_opt_map(struct rb_root * opt_map)$/;"	f
+free_user_data	lib/eventloop/eventloop.c	/^    free_user_data_t free_user_data;$/;"	m	struct:file_event	file:
+free_user_data	lib/eventloop/eventloop.c	/^    free_user_data_t free_user_data;$/;"	m	struct:time_event	file:
+free_user_data	lib/eventloop/eventloop.h	/^    free_user_data_t free_user_data;$/;"	m	struct:poll_file_event
+free_user_data	lib/eventloop/eventloop.h	/^    free_user_data_t free_user_data;$/;"	m	struct:poll_time_event
+free_user_data_t	lib/eventloop/eventloop.h	/^typedef void (* free_user_data_t)(void * user_data);$/;"	t
+fsync_cli	fsync/fsync_cli.c	/^int fsync_cli(void)$/;"	f
+func	lib/pthread/thread_pool.h	/^    task_func_t func;$/;"	m	struct:task_struct
+func	src/practice-13/test_search_dir.c	/^int func(char * filepath)$/;"	f
+get_formatted_time	lib/log.c	/^static char* get_formatted_time() {$/;"	f	file:
+get_if_info	lib/if_info.c	/^struct if_info * get_if_info(void)$/;"	f
+get_local_files_info	fsync/fsync_cli.c	/^int get_local_files_info(char * fullpath, void * args)$/;"	f
+get_opt_map	lib/opt.c	/^struct rb_root * get_opt_map(int argc, char ** argv, $/;"	f
+get_opt_value	lib/opt.c	/^char * get_opt_value(struct rb_root * opt_map, char * opt)$/;"	f
+get_pid	inetd/inetd.sh	/^function get_pid()$/;"	f
+get_sockaddr_in	lib/common.c	/^int get_sockaddr_in(int argc, char ** argv,$/;"	f
+get_sockaddr_params	lib/common.c	/^int get_sockaddr_params(int argc, char ** argv,$/;"	f
+getpeername_ipv4	lib/socket.c	/^int getpeername_ipv4(int sockfd, struct sockaddr_in * addr)$/;"	f
+getsockname_ipv4	lib/socket.c	/^int getsockname_ipv4(int sockfd, struct sockaddr_in * addr)$/;"	f
+heap_create	lib/min_heap.c	/^struct heap_struct * heap_create(struct heap_type * type)$/;"	f
+heap_destory	lib/min_heap.c	/^void heap_destory(struct heap_struct * heap)$/;"	f
+heap_pop	lib/min_heap.c	/^void * heap_pop(struct heap_struct * heap)$/;"	f
+heap_push	lib/min_heap.c	/^int heap_push(struct heap_struct * heap, void * val)$/;"	f
+heap_size	lib/min_heap.c	/^int heap_size(struct heap_struct * heap)$/;"	f
+heap_struct	lib/min_heap.c	/^struct heap_struct {$/;"	s	file:
+heap_top	lib/min_heap.c	/^void * heap_top(struct heap_struct * heap)$/;"	f
+heap_type	lib/min_heap.h	/^struct heap_type {$/;"	s
+home_page	src/practice-16/web/home_page.c	/^void home_page(char * host, char * fname)$/;"	f
+hstr_2_hstr_map	lib/dict.c	/^struct dict_type hstr_2_hstr_map = {$/;"	v	typeref:struct:dict_type
+hwaddr	lib/if_info.h	/^    unsigned char hwaddr[IF_HADDR];$/;"	m	struct:if_info
+id	lib/eventloop/eventloop.c	/^    time_event_id id;$/;"	m	struct:time_event	file:
+id	lib/timer/timer.h	/^    timer_id_t id;$/;"	m	struct:timer_struct
+if_info	lib/if_info.h	/^struct if_info {$/;"	s
+ifindx	lib/utils.h	/^    int ifindx;$/;"	m	struct:msg_info
+index	lib/if_info.h	/^    short index;$/;"	m	struct:if_info
+inetd	inetd/inetd.c	/^int inetd(char * config_file)$/;"	f
+ini_free	3rd/ini.c	33;"	d	file:
+ini_handler	3rd/ini.h	/^typedef int (*ini_handler)(void* user, const char* section,$/;"	t
+ini_malloc	3rd/ini.c	32;"	d	file:
+ini_parse	3rd/ini.c	/^int ini_parse(const char* filename, ini_handler handler, void* user)$/;"	f
+ini_parse_file	3rd/ini.c	/^int ini_parse_file(FILE* file, ini_handler handler, void* user)$/;"	f
+ini_parse_stream	3rd/ini.c	/^int ini_parse_stream(ini_reader reader, void* stream, ini_handler handler,$/;"	f
+ini_parse_string	3rd/ini.c	/^int ini_parse_string(const char* string, ini_handler handler, void* user) {$/;"	f
+ini_parse_string_ctx	3rd/ini.c	/^} ini_parse_string_ctx;$/;"	t	typeref:struct:__anon2	file:
+ini_reader	3rd/ini.h	/^typedef char* (*ini_reader)(char* str, int num, void* stream);$/;"	t
+ini_reader_string	3rd/ini.c	/^static char* ini_reader_string(char* str, int num, void* stream) {$/;"	f	file:
+ini_realloc	3rd/ini.c	34;"	d	file:
+init_fd_set	src/practice-6/echo_server_01.c	/^int init_fd_set(void) $/;"	f
+init_fd_set	src/practice-6/echo_server_03.c	/^int init_fd_set(void) $/;"	f
+init_log	lib/log.c	/^int init_log(char * log_file, int log_with_prefix)$/;"	f
+init_sockaddr_ipv4	lib/socket.c	/^int init_sockaddr_ipv4(struct sockaddr_in * addr, const char * ip, uint16_t port)$/;"	f
+init_tftp_config	tftp/common.c	/^void init_tftp_config(struct tftp_struct * tftp)$/;"	f
+int_compare	tests/test_min_heap.c	/^int int_compare(void * val1, void * val2)$/;"	f
+int_type	tests/test_min_heap.c	/^struct heap_type int_type = {$/;"	v	typeref:struct:heap_type
+interval	lib/eventloop/eventloop.c	/^    struct timeval interval; \/* used when it's perodic *\/$/;"	m	struct:time_event	typeref:struct:time_event::timeval	file:
+interval	lib/eventloop/eventloop.h	/^    struct timeval interval;$/;"	m	struct:poll_time_event	typeref:struct:poll_time_event::timeval
+interval	lib/timer/timer.h	/^    uint32_t interval; \/* only used for periodic timers *\/$/;"	m	struct:timer_struct
+is_empty	lib/pthread/thread_pool.c	/^    pthread_cond_t is_empty;$/;"	m	struct:thread_pool	file:
+is_file_filtered	fsync/utils.c	/^int is_file_filtered(char * filepath)$/;"	f
+join_n_str	fsync/utils.c	/^char * join_n_str(char * strs[])$/;"	f
+join_n_str	src/practice-13/test_mkdir.c	/^char * join_n_str(char * strs[])$/;"	f
+keepalive_timeout	tftp/tftp.h	/^    struct timeval keepalive_timeout;$/;"	m	struct:tftp_struct	typeref:struct:tftp_struct::timeval
+key	lib/dict.c	/^    void * key;$/;"	m	struct:dict_entry	file:
+key	tests/test_min_heap.c	/^    int key;$/;"	m	struct:test_struct	file:
+key_compare	lib/dict.h	/^    key_compare_t key_compare;$/;"	m	struct:dict_type
+key_compare_t	lib/dict.h	/^typedef int (* key_compare_t)(void * key1, void * key2);$/;"	t
+key_destroy	lib/dict.h	/^    key_destroy_t key_destroy;$/;"	m	struct:dict_type
+key_destroy_t	lib/dict.h	/^typedef void (* key_destroy_t)(void * key);$/;"	t
+key_dup	lib/dict.h	/^    key_dup_t key_dup;$/;"	m	struct:dict_type
+key_dup_t	lib/dict.h	/^typedef void * (* key_dup_t)(void * key);$/;"	t
+last_block	lib/buffer.c	/^    struct _buffer_block * last_block;$/;"	m	struct:socket_buffer	typeref:struct:socket_buffer::_buffer_block	file:
+last_recv_time	tftp/tftp.h	/^    struct timeval last_recv_time;$/;"	m	struct:tftp_struct	typeref:struct:tftp_struct::timeval
+last_update_time	lib/timer/timer_manager.c	/^    struct timespec last_update_time;$/;"	m	struct:timer_manager	typeref:struct:timer_manager::timespec	file:
+len	fsync/fsync.h	/^    uint16_t len;$/;"	m	struct:cmd_payload_ack
+len	fsync/fsync.h	/^    uint16_t len;$/;"	m	struct:cmd_payload_req
+len	lib/min_heap.c	/^    int len;$/;"	m	struct:heap_struct	file:
+len	tftp/tftp.h	/^    int len; \/* block size *\/$/;"	m	struct:tftp_block_hdr
+len	tftp/tftp.h	/^    int len;$/;"	m	struct:tftp_data_pkt
+length	fsync/fsync.h	/^    uint32_t length;        \/* length of payload *\/$/;"	m	struct:filesync_file_header
+length	fsync/fsync.h	/^    uint32_t length; \/* length of payload *\/$/;"	m	struct:filesync_cmd_header
+list_add	3rd/list.c	/^inline void list_add(struct list_head *new, struct list_head *head)$/;"	f
+list_add_tail	3rd/list.c	/^inline void list_add_tail(struct list_head *new, struct list_head *head)$/;"	f
+list_cut_position	3rd/list.c	/^inline void list_cut_position(struct list_head *list,$/;"	f
+list_del	3rd/list.c	/^inline void list_del(struct list_head *entry)$/;"	f
+list_del_init	3rd/list.c	/^inline void list_del_init(struct list_head *entry)$/;"	f
+list_empty	3rd/list.c	/^inline int list_empty(const struct list_head *head)$/;"	f
+list_empty_careful	3rd/list.c	/^inline int list_empty_careful(const struct list_head *head)$/;"	f
+list_entry	3rd/list.h	191;"	d
+list_first_entry	3rd/list.h	202;"	d
+list_for_each	3rd/list.h	210;"	d
+list_for_each_entry	3rd/list.h	248;"	d
+list_for_each_entry_continue	3rd/list.h	284;"	d
+list_for_each_entry_continue_reverse	3rd/list.h	298;"	d
+list_for_each_entry_from	3rd/list.h	311;"	d
+list_for_each_entry_reverse	3rd/list.h	259;"	d
+list_for_each_entry_safe	3rd/list.h	322;"	d
+list_for_each_entry_safe_continue	3rd/list.h	338;"	d
+list_for_each_entry_safe_from	3rd/list.h	354;"	d
+list_for_each_entry_safe_reverse	3rd/list.h	369;"	d
+list_for_each_prev	3rd/list.h	218;"	d
+list_for_each_prev_safe	3rd/list.h	237;"	d
+list_for_each_safe	3rd/list.h	227;"	d
+list_head	3rd/list.h	/^struct list_head {$/;"	s
+list_is_last	3rd/list.c	/^inline int list_is_last(const struct list_head *list,$/;"	f
+list_is_singular	3rd/list.c	/^inline int list_is_singular(const struct list_head *head)$/;"	f
+list_move	3rd/list.c	/^inline void list_move(struct list_head *list, struct list_head *head)$/;"	f
+list_move_tail	3rd/list.c	/^inline void list_move_tail(struct list_head *list,$/;"	f
+list_prepare_entry	3rd/list.h	272;"	d
+list_replace	3rd/list.c	/^inline void list_replace(struct list_head *old,$/;"	f
+list_replace_init	3rd/list.c	/^inline void list_replace_init(struct list_head *old,$/;"	f
+list_rotate_left	3rd/list.c	/^inline void list_rotate_left(struct list_head *head)$/;"	f
+list_safe_reset_next	3rd/list.h	387;"	d
+list_splice	3rd/list.c	/^inline void list_splice(const struct list_head *list,$/;"	f
+list_splice_init	3rd/list.c	/^inline void list_splice_init(struct list_head *list,$/;"	f
+list_splice_tail	3rd/list.c	/^inline void list_splice_tail(struct list_head *list,$/;"	f
+list_splice_tail_init	3rd/list.c	/^inline void list_splice_tail_init(struct list_head *list,$/;"	f
+listen_ipv4	lib/socket.c	/^int listen_ipv4(int sockfd, int backlog)$/;"	f
+lock	lib/pthread/thread.c	/^    pthread_mutex_t lock;$/;"	m	struct:thread_struct	file:
+lock	lib/pthread/thread_pool.c	/^    pthread_mutex_t lock;$/;"	m	struct:thread_pool	file:
+log_cmd_hdr	fsync/debug.c	/^inline void log_cmd_hdr(struct filesync_cmd_header * hdr)$/;"	f
+log_cmd_payload_ack	fsync/debug.c	/^inline void log_cmd_payload_ack(struct cmd_payload_ack * ack)$/;"	f
+log_cmd_payload_req	fsync/debug.c	/^inline void log_cmd_payload_req(struct cmd_payload_req * req)$/;"	f
+log_debug	lib/log.h	25;"	d
+log_error	lib/log.h	31;"	d
+log_error_sys	lib/log.h	38;"	d
+log_fatal	lib/log.h	33;"	d
+log_fatal_sys	lib/log.h	40;"	d
+log_file_hdr	fsync/debug.c	/^inline void log_file_hdr(struct filesync_file_header * hdr)$/;"	f
+log_full_cmd_hdr	fsync/debug.c	/^void log_full_cmd_hdr(struct socket_buffer * buffer)$/;"	f
+log_info	lib/log.h	27;"	d
+log_to	lib/log.c	/^void log_to($/;"	f
+log_warning	lib/log.h	29;"	d
+log_warning_sys	lib/log.h	36;"	d
+login_name	inetd/inetd.c	/^    char * login_name;$/;"	m	struct:server_conf	file:
+long_opt	lib/opt.h	/^    char * long_opt;$/;"	m	struct:opt_def
+lskip	3rd/ini.c	/^static char* lskip(const char* s)$/;"	f	file:
+main	fsync/cli_main.c	/^int main(int argc, char ** argv)$/;"	f
+main	fsync/main.c	/^int main(int argc, char ** argv)$/;"	f
+main	inetd/main.c	/^int main(int argc, char ** argv)$/;"	f
+main	lib/coroutine/test.c	/^int main(int argc, char ** argv)$/;"	f
+main	lib/pthread/test.c	/^int main(int argc, char ** argv)$/;"	f
+main	lib/timer/tests.c	/^int main(int argc, char ** argv)$/;"	f
+main	ping/main.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-13/daytime_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-13/daytime_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-13/test_mkdir.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-13/test_search_dir.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-13/test_test.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-14/echo_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-14/echo_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-15/unixbind.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-16/web/web.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-17/ifinfo.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-20/echo_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-20/echo_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-24/recv_oob.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-24/send_oob.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-5/daytime_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-5/daytime_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-5/echo_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-5/echo_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-6/echo_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-6/echo_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-6/echo_server_01.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-6/echo_server_03.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-8/echo_client.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-8/echo_server.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-8/test_opt.c	/^int main(int argc, char ** argv)$/;"	f
+main	src/practice-8/test_setproctitile.c	/^int main(int argc, char ** argv, char ** environ)$/;"	f
+main	tests/test_dict.c	/^int main(int argc, char ** argv)$/;"	f
+main	tests/test_eventloop.c	/^int main(int argc, char * argv[])$/;"	f
+main	tests/test_min_heap.c	/^int main(int argc, char ** argv)$/;"	f
+main	tftp/tftp_client.c	/^int main(int argc, char * argv[])$/;"	f
+main	tftp/tftp_server.c	/^int main(int argc, char * argv[])$/;"	f
+max	lib/buffer.c	32;"	d	file:
+max	lib/utils.h	21;"	d
+max_retry_nr	tftp/tftp.h	/^    int max_retry_nr; \/* max retransmission number before quit *\/$/;"	m	struct:tftp_struct
+max_sent_block_nr	tftp/tftp.h	/^    int max_sent_block_nr;$/;"	m	struct:tftp_struct
+maxfd	lib/eventloop/event_select.c	/^    int maxfd;$/;"	m	struct:poll_struct	file:
+md5	fsync/fsync.h	/^    char md5[MD5_SIZE];$/;"	m	struct:cmd_payload_req
+min	lib/buffer.c	33;"	d	file:
+min	lib/utils.h	22;"	d
+mkdir_recursively	fsync/utils.c	/^int mkdir_recursively(char * dirpath, char * path, mode_t mode)$/;"	f
+mkdir_recursively	src/practice-13/test_mkdir.c	/^int mkdir_recursively(char * dirpath, char * path, mode_t mode)$/;"	f
+mode	tftp/tftp.h	/^    char * mode;$/;"	m	struct:tftp_req_pkt
+mode	tftp/tftp.h	/^    char * mode;$/;"	m	struct:tftp_struct
+msg_info	lib/utils.h	/^struct msg_info {$/;"	s
+mtu	lib/if_info.h	/^    short mtu;$/;"	m	struct:if_info
+mutex_destroy	lib/pthread/mutex.h	/^static inline int mutex_destroy(pthread_mutex_t * mutex)$/;"	f
+mutex_init	lib/pthread/mutex.h	/^static inline int mutex_init(pthread_mutex_t * mutex, pthread_mutexattr_t * attr)$/;"	f
+mutex_lock	lib/pthread/mutex.h	/^static inline int mutex_lock(pthread_mutex_t * mutex)$/;"	f
+mutex_trylock	lib/pthread/mutex.h	/^static inline int mutex_trylock(pthread_mutex_t * mutex)$/;"	f
+mutex_unlock	lib/pthread/mutex.h	/^static inline int mutex_unlock(pthread_mutex_t * mutex)$/;"	f
+name	lib/if_info.h	/^    char name[IF_NAME];$/;"	m	struct:if_info
+netmask	lib/if_info.h	/^    char netmask[IF_ADDR];$/;"	m	struct:if_info
+new_test_struct	tests/test_min_heap.c	/^struct test_struct * new_test_struct(int key, int val)$/;"	f
+next	3rd/list.h	/^    struct list_head * next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+next	lib/buffer.c	/^    struct _buffer_block * next;$/;"	m	struct:_buffer_block	typeref:struct:_buffer_block::_buffer_block	file:
+next	lib/if_info.h	/^    struct if_info * next; $/;"	m	struct:if_info	typeref:struct:if_info::if_info
+next_block_nr	tftp/tftp.h	/^    int next_block_nr;$/;"	m	struct:tftp_struct
+next_time_event_id	lib/eventloop/eventloop.c	/^    time_event_id next_time_event_id;$/;"	m	struct:eventloop	file:
+next_timer_id	lib/timer/timer_manager.c	/^    timer_id_t next_timer_id;$/;"	m	struct:timer_manager	file:
+node	inetd/inetd.c	/^    struct rb_node node;$/;"	m	struct:wait_queue	typeref:struct:wait_queue::rb_node	file:
+node	lib/coroutine/coroutine.c	/^    struct rb_node node;$/;"	m	struct:coroutine_struct	typeref:struct:coroutine_struct::rb_node	file:
+node	lib/dict.c	/^    struct rb_node node;$/;"	m	struct:dict_entry	typeref:struct:dict_entry::rb_node	file:
+node	lib/opt.c	/^    struct rb_node node;$/;"	m	struct:_opt_node	typeref:struct:_opt_node::rb_node	file:
+node	lib/pthread/thread_pool.c	/^    struct list_head node;$/;"	m	struct:_task_node	typeref:struct:_task_node::list_head	file:
+node	lib/pthread/thread_pool.c	/^    struct list_head node;$/;"	m	struct:_thread_node	typeref:struct:_thread_node::list_head	file:
+node	lib/timer/timer.h	/^    struct list_head node; $/;"	m	struct:timer_struct	typeref:struct:timer_struct::list_head
+nrxmt	lib/rtt.h	/^    int nrxmt;$/;"	m	struct:rtt_info
+num_left	3rd/ini.c	/^    size_t num_left;$/;"	m	struct:__anon2	file:
+offsetof	3rd/defs.h	17;"	d
+offsetof	3rd/rbtree.h	98;"	d
+on_del_perodic_timer	tests/test_eventloop.c	/^int on_del_perodic_timer(struct eventloop * loop, time_event_id id, $/;"	f
+on_expired	lib/eventloop/eventloop.c	/^    time_event_callback_t on_expired;$/;"	m	struct:time_event	file:
+on_expired	lib/eventloop/eventloop.h	/^    time_event_callback_t on_expired;$/;"	m	struct:poll_time_event
+on_oneshot_timer	tests/test_eventloop.c	/^int on_oneshot_timer(struct eventloop * loop, time_event_id id, void * user_data)$/;"	f
+on_perodic_timer	tests/test_eventloop.c	/^int on_perodic_timer(struct eventloop * loop, time_event_id id, void * user_data)$/;"	f
+on_read	lib/eventloop/eventloop.c	/^    file_event_callback_t on_read;$/;"	m	struct:file_event	file:
+on_read	lib/eventloop/eventloop.h	/^    file_event_callback_t on_read;$/;"	m	struct:poll_file_event
+on_read	tests/test_eventloop.c	/^int on_read(struct eventloop * loop, int fd, void * user_data)$/;"	f
+on_write	lib/eventloop/eventloop.c	/^    file_event_callback_t on_write;$/;"	m	struct:file_event	file:
+on_write	lib/eventloop/eventloop.h	/^    file_event_callback_t on_write;$/;"	m	struct:poll_file_event
+on_write	tests/test_eventloop.c	/^int on_write(struct eventloop * loop, int fd, void * user_data)$/;"	f
+opt	lib/opt.c	/^    char * opt;$/;"	m	struct:_opt_node	file:
+opt_def	lib/opt.c	/^    struct opt_def * opt_def;$/;"	m	struct:_opt_node	typeref:struct:_opt_node::opt_def	file:
+opt_def	lib/opt.h	/^struct opt_def {$/;"	s
+opt_map_t	lib/opt.h	/^typedef struct rb_root opt_map_t;$/;"	t	typeref:struct:rb_root
+opt_value	lib/opt.c	/^    char * opt_value;$/;"	m	struct:_opt_node	file:
+options	lib/common.c	/^static struct opt_def options[] = {$/;"	v	typeref:struct:opt_def	file:
+options	src/practice-8/echo_server.c	/^struct opt_def options[] = {$/;"	v	typeref:struct:opt_def
+os	.ycm_extra_conf.py	/^import os$/;"	i
+os	lib/coroutine/.ycm_extra_conf.py	/^import os$/;"	i
+parent	lib/coroutine/coroutine.c	/^    cid_t parent;$/;"	m	struct:coroutine_struct	file:
+parent	lib/coroutine/coroutine.h	/^    cid_t parent; $/;"	m	struct:__anon1
+parse_args	fsync/cli_main.c	/^static void parse_args(int argc, char ** argv)$/;"	f	file:
+parse_cmd_reply	fsync/packet.h	/^typedef int (*parse_cmd_reply)(struct filesync_cmd_header * reply_hdr, $/;"	t
+parse_cmd_req	fsync/packet.h	/^typedef int (*parse_cmd_req)(struct filesync_cmd_header * req_hdr, $/;"	t
+parse_download_req	fsync/fsync.c	/^static int parse_download_req(struct filesync_cmd_header * hdr, $/;"	f	file:
+parse_sync_info_reply	fsync/fsync_cli.c	/^int parse_sync_info_reply(struct filesync_cmd_header * hdr, $/;"	f
+parse_upload_reply	fsync/fsync_cli.c	/^static int parse_upload_reply(struct filesync_cmd_header * hdr, $/;"	f	file:
+parse_upload_req	fsync/fsync.c	/^static int parse_upload_req(struct filesync_cmd_header * hdr, $/;"	f	file:
+payload	fsync/fsync.h	/^    char payload[];  $/;"	m	struct:filesync_cmd_header
+payload	fsync/fsync.h	/^    char payload[];$/;"	m	struct:filesync_file_header
+perodic	lib/eventloop/eventloop.c	/^    char perodic; \/* BOOL, perodic timer when true *\/$/;"	m	struct:time_event	file:
+perodic	lib/eventloop/eventloop.h	/^    char perodic; \/* perodic if True *\/$/;"	m	struct:poll_time_event
+pid	inetd/inetd.c	/^    pid_t pid;$/;"	m	struct:wait_queue	file:
+ping	ping/ping.c	/^void ping(char * dst_ip)$/;"	f
+poll	lib/eventloop/eventloop.c	/^    void * poll; \/* used for polling api specific data *\/$/;"	m	struct:eventloop	file:
+poll_create	lib/eventloop/event_epoll.c	/^void * poll_create(void)$/;"	f
+poll_create	lib/eventloop/event_select.c	/^void * poll_create(void)$/;"	f
+poll_destory	lib/eventloop/event_epoll.c	/^void poll_destory(void * poll)$/;"	f
+poll_destory	lib/eventloop/event_select.c	/^void poll_destory(void * poll)$/;"	f
+poll_event	lib/eventloop/poll_api.h	/^struct poll_event {$/;"	s
+poll_event_add	lib/eventloop/event_epoll.c	/^int poll_event_add(void * poll, int fd, int events)$/;"	f
+poll_event_add	lib/eventloop/event_select.c	/^int poll_event_add(void * ptr, int fd, int events)$/;"	f
+poll_event_del	lib/eventloop/event_epoll.c	/^int poll_event_del(void * poll, int fd)$/;"	f
+poll_event_del	lib/eventloop/event_select.c	/^int poll_event_del(void * ptr, int fd)$/;"	f
+poll_event_mod	lib/eventloop/event_epoll.c	/^int poll_event_mod(void * poll, int fd, int events)$/;"	f
+poll_event_mod	lib/eventloop/event_select.c	/^int poll_event_mod(void * ptr, int fd, int new_events)$/;"	f
+poll_file_event	lib/eventloop/eventloop.h	/^struct poll_file_event {$/;"	s
+poll_struct	lib/eventloop/event_epoll.c	/^struct poll_struct {$/;"	s	file:
+poll_struct	lib/eventloop/event_select.c	/^struct poll_struct {$/;"	s	file:
+poll_time_event	lib/eventloop/eventloop.h	/^struct poll_time_event {$/;"	s
+poll_wait	lib/eventloop/event_epoll.c	/^int poll_wait(void * ptr, $/;"	f
+poll_wait	lib/eventloop/event_select.c	/^int poll_wait(void * ptr, $/;"	f
+pool	lib/pthread/thread_pool.c	/^    struct thread_pool * pool;$/;"	m	struct:_thread_args	typeref:struct:_thread_args::thread_pool	file:
+prepare_cmd_request	fsync/packet.c	/^void prepare_cmd_request(int cmd, char * remote_dir, char * local_dir)$/;"	f
+prev	3rd/list.h	/^    struct list_head * prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head
+print_coroutines	lib/coroutine/coroutine.c	/^void print_coroutines(void)$/;"	f
+print_otions	lib/opt.c	/^void print_otions(struct rb_root * opt_map)$/;"	f
+print_usage	fsync/cli_main.c	/^static void print_usage(void)$/;"	f	file:
+print_usage	inetd/main.c	/^void print_usage(void)$/;"	f
+print_usage	tftp/tftp_client.c	/^void print_usage(void)$/;"	f
+process	src/practice-14/echo_server.c	/^void process(int conn_fd)$/;"	f
+process	src/practice-20/echo_server.c	/^void process(int conn_fd)$/;"	f
+process	src/practice-6/echo_client.c	/^void process(int sockfd)$/;"	f
+process	src/practice-8/echo_server.c	/^void process(int conn_fd)$/;"	f
+process_connection	src/practice-5/echo_client.c	/^void process_connection(int conn_fd)$/;"	f
+process_connection	src/practice-5/echo_server.c	/^void process_connection(int conn_fd)$/;"	f
+process_connection	src/practice-6/echo_client.c	/^void process_connection(int conn_fd)$/;"	f
+process_connection	src/practice-6/echo_server.c	/^void process_connection(int conn_fd)$/;"	f
+process_fd	src/practice-6/echo_server_01.c	/^void process_fd(int fd)$/;"	f
+process_fd	src/practice-6/echo_server_03.c	/^void process_fd(int fd)$/;"	f
+process_ip_packet	ping/ping.c	/^void process_ip_packet(struct ip * ippacket, $/;"	f
+protocol	inetd/inetd.c	/^    char * protocol;$/;"	m	struct:server_conf	file:
+ptr	3rd/ini.c	/^    const char* ptr;$/;"	m	struct:__anon2	file:
+r_pos	lib/buffer.c	/^    size_t r_pos, w_pos;$/;"	m	struct:socket_buffer	file:
+rb_color	3rd/rbtree.h	128;"	d
+rb_entry	3rd/rbtree.h	144;"	d
+rb_erase	3rd/rbtree.c	/^void rb_erase(struct rb_node *node, struct rb_root *root)$/;"	f
+rb_first	3rd/rbtree.c	/^struct rb_node *rb_first(struct rb_root *root)$/;"	f
+rb_insert_color	3rd/rbtree.c	/^void rb_insert_color(struct rb_node *node, struct rb_root *root)$/;"	f
+rb_is_black	3rd/rbtree.h	130;"	d
+rb_is_red	3rd/rbtree.h	129;"	d
+rb_last	3rd/rbtree.c	/^struct rb_node *rb_last(struct rb_root *root)$/;"	f
+rb_left	3rd/rbtree.h	/^	struct rb_node *rb_left;$/;"	m	struct:rb_node	typeref:struct:rb_node::rb_node
+rb_link_node	3rd/rbtree.h	/^static inline void rb_link_node(struct rb_node * node, struct rb_node * parent,$/;"	f
+rb_next	3rd/rbtree.c	/^struct rb_node *rb_next(struct rb_node *node)$/;"	f
+rb_node	3rd/rbtree.h	/^	struct rb_node *rb_node;$/;"	m	struct:rb_root	typeref:struct:rb_root::rb_node
+rb_node	3rd/rbtree.h	/^struct rb_node$/;"	s
+rb_parent	3rd/rbtree.h	127;"	d
+rb_parent_color	3rd/rbtree.h	/^	unsigned long  rb_parent_color;$/;"	m	struct:rb_node
+rb_prev	3rd/rbtree.c	/^struct rb_node *rb_prev(struct rb_node *node)$/;"	f
+rb_replace_node	3rd/rbtree.c	/^void rb_replace_node(struct rb_node *victim, struct rb_node *new,$/;"	f
+rb_right	3rd/rbtree.h	/^	struct rb_node *rb_right;$/;"	m	struct:rb_node	typeref:struct:rb_node::rb_node
+rb_root	3rd/rbtree.h	/^struct rb_root$/;"	s
+rb_set_black	3rd/rbtree.h	132;"	d
+rb_set_color	3rd/rbtree.h	/^static inline void rb_set_color(struct rb_node *rb, int color)$/;"	f
+rb_set_parent	3rd/rbtree.h	/^static inline void rb_set_parent(struct rb_node *rb, struct rb_node *p)$/;"	f
+rb_set_red	3rd/rbtree.h	131;"	d
+read_cmd_hdr_from_buffer	fsync/packet.c	/^int read_cmd_hdr_from_buffer(struct socket_buffer * buffer, $/;"	f
+read_cmd_payload_ack_from_buffer	fsync/packet.c	/^int read_cmd_payload_ack_from_buffer(struct socket_buffer * buffer, $/;"	f
+read_cmd_payload_req_from_buffer	fsync/packet.c	/^int read_cmd_payload_req_from_buffer($/;"	f
+read_file_hdr_from_buffer	fsync/packet.c	/^int read_file_hdr_from_buffer($/;"	f
+read_from_buffer_exactly	fsync/packet.c	/^void read_from_buffer_exactly($/;"	f
+read_set	lib/eventloop/event_select.c	/^    fd_set read_set;$/;"	m	struct:poll_struct	file:
+readn	lib/utils.c	/^size_t readn(int fd, void * buf, size_t n)$/;"	f
+recv_and_parse_cmd_req	fsync/fsync.c	/^static void recv_and_parse_cmd_req(struct filesync_cmd_header * cmd_hdr, $/;"	f	file:
+recv_and_save_files	fsync/packet.c	/^void recv_and_save_files(char * dir_path)$/;"	f
+recv_cmd_reply	fsync/fsync_cli.c	/^static void recv_cmd_reply(parse_cmd_reply parse_reply)$/;"	f	file:
+recv_data_ack	tftp/tftp.c	/^static int recv_data_ack(struct eventloop * loop, int fd, void * user_data)$/;"	f	file:
+recv_oob	src/practice-24/recv_oob.c	/^void recv_oob(struct sockaddr_in * server)$/;"	f
+recvbuf	lib/utils.h	/^    void * recvbuf;$/;"	m	struct:msg_info
+recvflags	lib/utils.h	/^    int recvflags;$/;"	m	struct:msg_info
+recvmsginfo	lib/utils.c	/^int recvmsginfo(int sockfd, struct msg_info * msg_info)$/;"	f
+repeat_print_str	fsync/fsync_cli.c	/^inline void repeat_print_str(char * s, unsigned int count, char * end)$/;"	f
+retrans_nr	tftp/tftp.h	/^    int retrans_nr; \/* retransmission counts *\/$/;"	m	struct:tftp_block_hdr
+retrans_timeout	tftp/tftp.h	/^    struct timeval retrans_timeout; \/* retransmission timeout *\/$/;"	m	struct:tftp_struct	typeref:struct:tftp_struct::timeval
+root	lib/dict.c	/^    struct rb_root root;$/;"	m	struct:dict	typeref:struct:dict::rb_root	file:
+root_wheel	lib/timer/timer_manager.c	/^    struct _root_wheel root_wheel;$/;"	m	struct:timer_manager	typeref:struct:timer_manager::_root_wheel	file:
+rrq_init	tftp/tftp.c	/^void rrq_init(struct eventloop * loop)$/;"	f
+rstrip	3rd/ini.c	/^static char* rstrip(char* s)$/;"	f	file:
+rto	lib/rtt.h	/^    int rto;$/;"	m	struct:rtt_info
+rtt	lib/rtt.h	/^    int rtt;$/;"	m	struct:rtt_info
+rtt_get	lib/rtt.c	/^int rtt_get(struct rtt_info * rtt_info)$/;"	f
+rtt_info	lib/rtt.h	/^struct rtt_info {$/;"	s
+rtt_init	lib/rtt.c	/^void rtt_init(struct rtt_info * rtt_info)$/;"	f
+rtt_new_packet	lib/rtt.c	/^void rtt_new_packet(struct rtt_info * rtt_info)$/;"	f
+rtt_timeout	lib/rtt.c	/^int rtt_timeout(struct rtt_info * rtt_info)$/;"	f
+rtt_timestamp	lib/rtt.c	/^time_t rtt_timestamp(void)$/;"	f
+rtt_update	lib/rtt.c	/^void rtt_update(struct rtt_info * rtt_info, time_t last_rtt)$/;"	f
+rttval	lib/rtt.h	/^    float rttval;$/;"	m	struct:rtt_info
+run	lib/coroutine/coroutine.c	/^    coroutine_func_t run;$/;"	m	struct:coroutine_struct	file:
+run	lib/pthread/thread.c	/^    th_func_t run;$/;"	m	struct:thread_struct	file:
+running	lib/eventloop/eventloop.c	/^    char running;$/;"	m	struct:eventloop	file:
+running	lib/pthread/thread.c	/^    sem_t running;$/;"	m	struct:thread_struct	file:
+search_dir_callback	fsync/utils.h	/^typedef int (*search_dir_callback) (char * fullpath, void * callback_args); $/;"	t
+search_dir_callback	src/practice-13/test_search_dir.c	/^typedef int (*search_dir_callback) (char * fullpath);$/;"	t	file:
+search_dir_recursively	fsync/utils.c	/^int search_dir_recursively(char * dirpath, search_dir_callback callback, void * callback_args)$/;"	f
+search_dir_recursively	src/practice-13/test_search_dir.c	/^int search_dir_recursively(char * dirpath, search_dir_callback callback)$/;"	f
+send_file	fsync/fsync.c	/^static int send_file(char * fullpath, void * args)$/;"	f	file:
+send_oob	src/practice-24/send_oob.c	/^void send_oob(struct sockaddr_in * client, struct sockaddr_in * server)$/;"	f
+sent_rate	tftp/tftp.h	/^    struct timeval sent_rate; \/* interval of sending packet *\/$/;"	m	struct:tftp_struct	typeref:struct:tftp_struct::timeval
+server_conf	inetd/inetd.c	/^struct server_conf {$/;"	s	file:
+server_program	inetd/inetd.c	/^    char * server_program;$/;"	m	struct:server_conf	file:
+server_program_arguments	inetd/inetd.c	/^    char * server_program_arguments[32];$/;"	m	struct:server_conf	file:
+service_name	inetd/inetd.c	/^    char * service_name;$/;"	m	struct:server_conf	file:
+set_proctitile	lib/utils.c	/^int set_proctitile(char ** argv, char * new_title)$/;"	f
+set_sock_nonblocking	lib/socket.c	/^int set_sock_nonblocking(int sockfd)$/;"	f
+set_sock_reuseaddr	lib/socket.c	/^int set_sock_reuseaddr(int sockfd)$/;"	f
+set_socket_timeout	fsync/network.c	/^int set_socket_timeout(int socket_fd, time_t ms)$/;"	f
+short_opt	lib/opt.h	/^    char * short_opt;$/;"	m	struct:opt_def
+show_pretty_sync_info	fsync/fsync_cli.c	/^void show_pretty_sync_info(void)$/;"	f
+sig_alarm	src/practice-14/echo_client.c	/^static void sig_alarm(int signo)$/;"	f	file:
+sig_child	src/practice-5/echo_server.c	/^void sig_child(int signo)$/;"	f
+sig_child	src/practice-6/echo_server.c	/^void sig_child(int signo)$/;"	f
+sig_func_t	lib/utils.h	/^typedef void (*sig_func_t)(int);$/;"	t
+sig_hub	fsync/main.c	/^static void sig_hub(int signo)$/;"	f	file:
+sig_urg	src/practice-24/recv_oob.c	/^void sig_urg(int signo)$/;"	f
+signal_act	lib/utils.c	/^sig_func_t signal_act(int signo, sig_func_t func) $/;"	f
+size	lib/dict.c	/^    int size;$/;"	m	struct:dict	file:
+sockaddr_to_ipport_ipv4	lib/socket.c	/^void sockaddr_to_ipport_ipv4($/;"	f
+socket_buffer	lib/buffer.c	/^struct socket_buffer {$/;"	s	file:
+socket_buffer_copy	lib/buffer.c	/^struct socket_buffer * socket_buffer_copy(struct socket_buffer * socket_buffer)$/;"	f
+socket_buffer_free	lib/buffer.c	/^void socket_buffer_free(struct socket_buffer * socket_buffer)$/;"	f
+socket_buffer_new	lib/buffer.c	/^struct socket_buffer * socket_buffer_new(void)$/;"	f
+socket_buffer_peek	lib/buffer.c	/^int socket_buffer_peek(struct socket_buffer * socket_buffer, $/;"	f
+socket_buffer_read	lib/buffer.c	/^int socket_buffer_read(struct socket_buffer * socket_buffer, char * buf, int len)$/;"	f
+socket_buffer_recv	lib/buffer.c	/^int socket_buffer_recv(struct socket_buffer * socket_buffer, int fd, int * len)$/;"	f
+socket_buffer_replace	lib/buffer.c	/^int socket_buffer_replace(struct socket_buffer * socket_buffer, $/;"	f
+socket_buffer_seek	lib/buffer.c	/^int socket_buffer_seek(struct socket_buffer * socket_buffer, $/;"	f
+socket_buffer_send	lib/buffer.c	/^int socket_buffer_send(struct socket_buffer * socket_buffer, int fd, int * len)$/;"	f
+socket_buffer_size	lib/buffer.c	/^size_t socket_buffer_size(struct socket_buffer * socket_buffer)$/;"	f
+socket_buffer_write	lib/buffer.c	/^int socket_buffer_write(struct socket_buffer * socket_buffer, char * buf, int len)$/;"	f
+socket_read_at_least	fsync/network.c	/^void socket_read_at_least(int fd, struct socket_buffer * buffer, int min_bytes)$/;"	f
+socket_send_file	fsync/network.c	/^void socket_send_file(int socket_fd, int file_fd)$/;"	f
+socket_transfer_to	fsync/network.c	/^void socket_transfer_to(struct socket_buffer * buffer, $/;"	f
+socket_type	inetd/inetd.c	/^    char * socket_type;$/;"	m	struct:server_conf	file:
+socket_write_exactly	fsync/network.c	/^void socket_write_exactly(int fd, struct socket_buffer * buffer, int bytes)$/;"	f
+sockfd	inetd/inetd.c	/^    int sockfd;$/;"	m	struct:wait_queue	file:
+sockfd	src/practice-16/web/web.h	/^    int sockfd;$/;"	m	struct:file
+sockfd	tftp/tftp.h	/^    int sockfd; \/* udp socket fd *\/$/;"	m	struct:tftp_struct
+srcaddr	lib/utils.h	/^    struct sockaddr_in srcaddr;$/;"	m	struct:msg_info	typeref:struct:msg_info::sockaddr_in
+srtt	lib/rtt.h	/^    float srtt;$/;"	m	struct:rtt_info
+stack	lib/coroutine/coroutine.c	/^    char * stack;$/;"	m	struct:coroutine_struct	file:
+stack_size	lib/coroutine/coroutine.c	/^    size_t stack_size;$/;"	m	struct:coroutine_struct	file:
+start_connect	src/practice-16/web/start_connect.c	/^void start_connect(struct file * file)$/;"	f
+state	3rd/md5.h	/^	unsigned int state[4];$/;"	m	struct:__anon3
+status	lib/coroutine/coroutine.c	/^    char status;$/;"	m	struct:coroutine_struct	file:
+status	lib/pthread/thread.c	/^    int status;$/;"	m	struct:thread_struct	file:
+status	lib/pthread/thread_pool.c	/^    int status;$/;"	m	struct:thread_pool	file:
+str_cmd	fsync/debug.c	/^char * str_cmd(uint8_t cmd)$/;"	f
+str_md5	fsync/debug.c	/^char * str_md5(char * md5)$/;"	f
+strncpy0	3rd/ini.c	/^static char* strncpy0(char* dest, const char* src, size_t size)$/;"	f	file:
+struct_compare	tests/test_min_heap.c	/^int struct_compare(void * val1, void * val2)$/;"	f
+struct_type	tests/test_min_heap.c	/^struct heap_type struct_type = {$/;"	v	typeref:struct:heap_type
+task	lib/pthread/thread_pool.c	/^    struct task_struct * task;$/;"	m	struct:_task_node	typeref:struct:_task_node::task_struct	file:
+task_func_t	lib/pthread/thread_pool.h	/^typedef void (*task_func_t)(void *);$/;"	t
+task_list	lib/pthread/thread_pool.c	/^    struct list_head task_list;$/;"	m	struct:thread_pool	typeref:struct:thread_pool::list_head	file:
+task_struct	lib/pthread/thread_pool.h	/^struct task_struct {$/;"	s
+tcp_connect	lib/utils.c	/^int tcp_connect(struct sockaddr_in * local_addr, $/;"	f
+tcp_listen	lib/utils.c	/^int tcp_listen(struct sockaddr_in * server_addr, int backlog)$/;"	f
+tcp_socket_ipv4	lib/socket.c	/^int tcp_socket_ipv4(void)$/;"	f
+test_struct	tests/test_min_heap.c	/^struct test_struct {$/;"	s	file:
+tftp_ack_pkt	tftp/tftp.h	/^struct tftp_ack_pkt {$/;"	s
+tftp_block_hdr	tftp/tftp.h	/^struct tftp_block_hdr {$/;"	s
+tftp_cli	tftp/tftp.c	/^void tftp_cli(int download_or_upload)$/;"	f
+tftp_data_pkt	tftp/tftp.h	/^struct tftp_data_pkt {$/;"	s
+tftp_error_pkt	tftp/tftp.h	/^struct tftp_error_pkt {$/;"	s
+tftp_recv_pkt	tftp/common.c	/^void * tftp_recv_pkt(void)$/;"	f
+tftp_relpy_error_msg	tftp/common.c	/^void tftp_relpy_error_msg(int error_code, char * msg)$/;"	f
+tftp_reply_ack	tftp/common.c	/^void tftp_reply_ack(int block_nr)$/;"	f
+tftp_req_pkt	tftp/tftp.h	/^struct tftp_req_pkt {$/;"	s
+tftp_send_data_block	tftp/common.c	/^void tftp_send_data_block(struct tftp_block_hdr * block)$/;"	f
+tftp_send_req	tftp/common.c	/^void tftp_send_req(int code, char * filename, char * mode)$/;"	f
+tftp_server	tftp/tftp.c	/^void tftp_server(void)$/;"	f
+tftp_struct	tftp/tftp.h	/^struct tftp_struct {$/;"	s
+th_func_t	lib/pthread/thread.h	/^typedef void *(*th_func_t) (void *);$/;"	t
+thread	lib/pthread/thread_pool.c	/^    struct thread_struct * thread;$/;"	m	struct:_thread_node	typeref:struct:_thread_node::thread_struct	file:
+thread_cancel	lib/pthread/thread.c	/^int thread_cancel(struct thread_struct * th)$/;"	f
+thread_create	lib/pthread/thread.c	/^struct thread_struct * thread_create($/;"	f
+thread_current	lib/pthread/thread.c	/^inline struct thread_struct * thread_current(void)$/;"	f
+thread_destroy	lib/pthread/thread.c	/^void thread_destroy(struct thread_struct * th)$/;"	f
+thread_detach	lib/pthread/thread.c	/^int thread_detach(struct thread_struct * th)$/;"	f
+thread_exit	lib/pthread/thread.c	/^void thread_exit(void * exit_code)$/;"	f
+thread_join	lib/pthread/thread.c	/^int thread_join(struct thread_struct * th, void ** retval)$/;"	f
+thread_list	lib/pthread/thread_pool.c	/^    struct list_head thread_list;$/;"	m	struct:thread_pool	typeref:struct:thread_pool::list_head	file:
+thread_node	lib/pthread/thread_pool.c	/^    struct _thread_node * thread_node;$/;"	m	struct:_thread_args	typeref:struct:_thread_args::_thread_node	file:
+thread_pool	lib/pthread/thread_pool.c	/^struct thread_pool {$/;"	s	file:
+thread_pool_create	lib/pthread/thread_pool.c	/^struct thread_pool * thread_pool_create(int size)$/;"	f
+thread_pool_destroy	lib/pthread/thread_pool.c	/^void thread_pool_destroy(struct thread_pool * pool)$/;"	f
+thread_pool_push	lib/pthread/thread_pool.c	/^int thread_pool_push(struct thread_pool * pool, struct task_struct * task)$/;"	f
+thread_pool_run	lib/pthread/thread_pool.c	/^void thread_pool_run(struct thread_pool * pool)$/;"	f
+thread_run	lib/pthread/thread.c	/^void thread_run(struct thread_struct * th)$/;"	f
+thread_struct	lib/pthread/thread.c	/^struct thread_struct {$/;"	s	file:
+ticks	lib/timer/timer_manager.c	/^    uint32_t ticks; \/* milliseconds *\/$/;"	m	struct:timer_manager	file:
+tid	lib/pthread/thread.c	/^    pthread_t tid;    $/;"	m	struct:thread_struct	file:
+time_event	lib/eventloop/eventloop.c	/^struct time_event { $/;"	s	file:
+time_event_callback_t	lib/eventloop/eventloop.h	/^typedef int (* time_event_callback_t)(struct eventloop * loop, $/;"	t
+time_event_dict_type	lib/eventloop/eventloop.c	/^struct dict_type time_event_dict_type = {$/;"	v	typeref:struct:dict_type
+time_event_heap_type	lib/eventloop/eventloop.c	/^struct heap_type time_event_heap_type = {$/;"	v	typeref:struct:heap_type
+time_event_id	lib/eventloop/eventloop.h	/^typedef unsigned long time_event_id;$/;"	t
+time_event_map	lib/eventloop/eventloop.c	/^    struct dict * time_event_map;$/;"	m	struct:eventloop	typeref:struct:eventloop::dict	file:
+time_events	lib/eventloop/eventloop.c	/^    struct heap_struct * time_events; \/* min heap *\/$/;"	m	struct:eventloop	typeref:struct:eventloop::heap_struct	file:
+timer_callback_t	lib/timer/timer.h	/^typedef void (*timer_callback_t)(timer_id_t timer_id, void * args);$/;"	t
+timer_create	lib/timer/timer.c	/^struct timer_struct * timer_create(timer_callback_t cb, $/;"	f
+timer_destory	lib/timer/timer.c	/^void timer_destory( struct timer_struct * timer) {$/;"	f
+timer_dict	lib/timer/timer_manager.c	/^    struct dict * timer_dict;$/;"	m	struct:timer_manager	typeref:struct:timer_manager::dict	file:
+timer_dict_type	lib/timer/timer_manager.c	/^struct dict_type timer_dict_type = {$/;"	v	typeref:struct:dict_type
+timer_id	tftp/tftp.h	/^    time_event_id timer_id;$/;"	m	struct:tftp_block_hdr
+timer_id_compare	lib/timer/timer_manager.c	/^static inline int timer_id_compare(void * key1, void * key2) {$/;"	f	file:
+timer_id_t	lib/timer/timer.h	/^typedef uint32_t timer_id_t;$/;"	t
+timer_manager	lib/timer/timer_manager.c	/^struct timer_manager {$/;"	s	file:
+timer_manager_add_timer	lib/timer/timer_manager.c	/^timer_id_t timer_manager_add_timer($/;"	f
+timer_manager_cancel_timer	lib/timer/timer_manager.c	/^void timer_manager_cancel_timer(struct timer_manager * manager, $/;"	f
+timer_manager_create	lib/timer/timer_manager.c	/^struct timer_manager * timer_manager_create(void)$/;"	f
+timer_manager_destory	lib/timer/timer_manager.c	/^void timer_manager_destory(struct timer_manager * manager)$/;"	f
+timer_manager_run_expired_timers	lib/timer/timer_manager.c	/^void timer_manager_run_expired_timers(struct timer_manager * manager)$/;"	f
+timer_manager_update_ticks	lib/timer/timer_manager.c	/^void timer_manager_update_ticks(struct timer_manager * manager)$/;"	f
+timer_struct	lib/timer/timer.h	/^struct timer_struct {$/;"	s
+timeval_add	lib/eventloop/eventloop.c	/^static struct timeval timeval_add(struct timeval * tv1, $/;"	f	file:
+type	lib/dict.c	/^    struct dict_type * type;$/;"	m	struct:dict	typeref:struct:dict::dict_type	file:
+type	lib/min_heap.c	/^    struct heap_type * type;$/;"	m	struct:heap_struct	typeref:struct:heap_struct::heap_type	file:
+udp_socket_ipv4	lib/socket.c	/^int udp_socket_ipv4(void)$/;"	f
+unix_bind	lib/socket.c	/^int unix_bind(int sockfd, const struct sockaddr_un * addr)$/;"	f
+unix_datagram_socket	lib/socket.c	/^int unix_datagram_socket(void)$/;"	f
+unix_init_sockaddr	lib/socket.c	/^int unix_init_sockaddr(struct sockaddr_un * addr, char * pathname)$/;"	f
+unix_stream_socket	lib/socket.c	/^int unix_stream_socket(void)$/;"	f
+user_data	lib/eventloop/eventloop.c	/^    void * user_data;$/;"	m	struct:file_event	file:
+user_data	lib/eventloop/eventloop.c	/^    void * user_data;$/;"	m	struct:time_event	file:
+user_data	lib/eventloop/eventloop.h	/^    void * user_data;$/;"	m	struct:poll_file_event
+user_data	lib/eventloop/eventloop.h	/^    void * user_data;$/;"	m	struct:poll_time_event
+val	lib/dict.c	/^    void * val;$/;"	m	struct:dict_entry	file:
+val	tests/test_min_heap.c	/^    int val;$/;"	m	struct:test_struct	file:
+val_compare	lib/min_heap.h	/^    val_compare_t val_compare;$/;"	m	struct:heap_type
+val_compare_t	lib/min_heap.h	/^typedef int (* val_compare_t)(void * val1, void * val2);$/;"	t
+val_destroy	lib/dict.h	/^    val_destroy_t val_destroy;$/;"	m	struct:dict_type
+val_destroy	lib/min_heap.h	/^    val_destroy_t val_destroy;$/;"	m	struct:heap_type
+val_destroy_t	lib/dict.h	/^typedef void (* val_destroy_t)(void * val);$/;"	t
+val_destroy_t	lib/min_heap.h	/^typedef void (* val_destroy_t)(void * val);$/;"	t
+val_dup	fsync/packet.c	/^inline void * val_dup(void * val)$/;"	f
+val_dup	lib/dict.h	/^    val_dup_t val_dup;$/;"	m	struct:dict_type
+val_dup_t	lib/dict.h	/^typedef void * (* val_dup_t)(void * val);$/;"	t
+vec	lib/min_heap.c	/^    void ** vec;$/;"	m	struct:heap_struct	file:
+vec	lib/timer/timer_manager.c	/^    struct list_head vec[TVN_size];$/;"	m	struct:_wheel	typeref:struct:_wheel::list_head	file:
+vec	lib/timer/timer_manager.c	/^    struct list_head vec[TVR_SIZE];$/;"	m	struct:_root_wheel	typeref:struct:_root_wheel::list_head	file:
+version	fsync/fsync.h	/^    uint8_t version; \/* not used, v1 currently *\/$/;"	m	struct:filesync_cmd_header
+w_pos	lib/buffer.c	/^    size_t r_pos, w_pos;$/;"	m	struct:socket_buffer	file:
+wait_flag	inetd/inetd.c	/^    char * wait_flag;$/;"	m	struct:server_conf	file:
+wait_queue	inetd/inetd.c	/^struct wait_queue {$/;"	s	file:
+wheel	lib/timer/timer_manager.c	/^    struct _wheel wheel[4];$/;"	m	struct:timer_manager	typeref:struct:timer_manager::_wheel	file:
+when_expired	lib/eventloop/eventloop.c	/^    struct timeval when_expired; \/* since the system was booted *\/$/;"	m	struct:time_event	typeref:struct:time_event::timeval	file:
+work1	lib/coroutine/test.c	/^void work1(void * args)$/;"	f
+work2	lib/coroutine/test.c	/^void work2(void * args)$/;"	f
+write_cmd_hdr_to_buffer	fsync/packet.c	/^int write_cmd_hdr_to_buffer(struct socket_buffer * buffer, $/;"	f
+write_cmd_payload_ack_to_buffer	fsync/packet.c	/^int write_cmd_payload_ack_to_buffer($/;"	f
+write_cmd_payload_req_to_buffer	fsync/packet.c	/^static int write_cmd_payload_req_to_buffer(char * fullpath, void * args)$/;"	f	file:
+write_file_hdr_to_buffer	fsync/packet.c	/^int write_file_hdr_to_buffer(struct socket_buffer * buffer, $/;"	f
+write_get_cmd	src/practice-16/web/write_get_cmd.c	/^void write_get_cmd(struct file * file)$/;"	f
+write_pid_file	lib/utils.c	/^int write_pid_file(const char * pid_file)$/;"	f
+write_set	lib/eventloop/event_select.c	/^    fd_set write_set;$/;"	m	struct:poll_struct	file:
+write_to_buffer_exactly	fsync/packet.c	/^void write_to_buffer_exactly($/;"	f
+writen	lib/utils.c	/^size_t writen(int fd, void * buf, size_t n)$/;"	f
+wrq_init	tftp/tftp.c	/^void wrq_init(struct eventloop * loop)$/;"	f
+ycm_core	.ycm_extra_conf.py	/^import ycm_core$/;"	i
+ycm_core	lib/coroutine/.ycm_extra_conf.py	/^import ycm_core$/;"	i
