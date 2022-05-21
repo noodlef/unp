@@ -326,21 +326,26 @@ int write_pid_file(const char * pid_file)
             log_error_sys("Unable to lock file(%s)!", pid_file);
         else 
             log_error_sys("Acquire write lock error, file: %s!", pid_file);
-        return -1;
+        goto failed;
     }
 
-    if (truncate(pid_file, 0) < 0) {
+    if (ftruncate(fd, 0) < 0) {
         log_error_sys("Truncate file(%s) error!", pid_file);
-        return -1;
+        goto failed;
     }
 
     snprintf(pid, sizeof(pid), "%ld\n", (long)getpid());
     if (writen(fd, pid, strlen(pid)) < strlen(pid)) {
         log_error_sys("Write pid to file(%s) error!", pid_file);
-        return -1;
+        goto failed;
     }
 
+    /* don't close fd */
     return 0;
+
+failed:
+    close(fd);
+    return -1;
 }
 
 int get_real_file_size(int fd)

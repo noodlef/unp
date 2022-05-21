@@ -20,8 +20,9 @@
 #include <sys/stat.h>
 #include <netinet/in.h>
 
-#include "../lib/log.h"
 #include "../3rd/md5.h"
+#include "../lib/log.h"
+#include "../lib/str_utils.h"
 
 #include "utils.h"
 
@@ -32,6 +33,23 @@ void die_unexpectedly(const char * error)
     else 
         log_error("Filesync quit unexpected, error_msg: %s!!!", error);
     exit(EXIT_FAILURE);
+}
+
+static int _is_dir_filtered(char * dirname)
+{
+    if (*dirname == '.')
+        return 1;
+
+    if (streq(dirname, "build"))
+        return 1;
+
+    if (streq(dirname, "bins"))
+        return 1;
+
+    if (streq(dirname, "deps"))
+        return 1;
+
+    return 0;
 }
 
 static int _search_dir_recursively(char * dirpath, int len, int size, 
@@ -68,7 +86,9 @@ static int _search_dir_recursively(char * dirpath, int len, int size,
         }
 
         if (S_ISDIR(statbuf.st_mode)) {
-            if (_search_dir_recursively(dirpath, len, size, callback, callback_args) < 0)
+            if (!_is_dir_filtered(dir_entry->d_name) 
+                    && _search_dir_recursively(dirpath, len, size, 
+                        callback, callback_args) < 0)
                 goto failed;
             len -= i;
             continue;
@@ -299,28 +319,11 @@ failed:
 
 int is_file_filtered(char * filepath)
 {
-    int len;
-    char * pos, * file, * suffix;
+    char * file, * suffix;
 
-    file = suffix = NULL;
-    if (!filepath)
-        return 1;
-    
-    /* find suffix and filename */
-    len = strlen(filepath);
-    pos = filepath + len;
-    while (len-- > 0) {
-        if (!suffix && *pos == '.' && pos != filepath)
-            suffix = pos + 1;
-        else if (!file && *pos == '/')
-            file = pos + 1;
-
-        if (suffix && file)
-            break;
-        --pos;
-    }
+    basename_path(filepath, &file, &suffix);
     if (!file)
-        file = filepath;
+        return 1;
 
     /* hidden files, eg: .example */
     if (*file == '.')
@@ -336,3 +339,4 @@ int is_file_filtered(char * filepath)
 
     return 0;
 }
+

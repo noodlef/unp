@@ -18,8 +18,11 @@ target:
 		make -C $$dir -f $(MAKE_PRACTICE); \
     done
 	@make -C src/practice-16/web
+	@make -C lib/eventloop 
 	@make -C inetd
 	@make -C fsync
+	@make -C tftp
+	@make -C tests
 
 install:
 	@make -C inetd install
@@ -35,3 +38,7 @@ clean:
 	@make -C src/practice-16/web clean
 	@make -C inetd clean
 	@make -C fsync clean
+	@make -C tftp clean
+	@make -C tests clean
+	@make -C lib/eventloop clean 
+

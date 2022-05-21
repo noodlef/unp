@@ -16,6 +16,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+#include "str_utils.h"
+
 static char _is_delim(const char * delim, char c)
 {
     const char * p;
@@ -82,5 +84,39 @@ char * format_str(char * fmt, ...)
     va_end(ap);
 
     return buf;
+}
+
+void basename_path(char * path, char ** file, char ** suffix)
+{
+    int len;
+    char * pos;
+
+    *file = NULL;
+    if (suffix)
+        *suffix = NULL;
+    if (!path)
+        return;
+
+    /* find suffix and filename */
+    len = strlen(path);
+    pos = path + len;
+    while (len-- >= 0) {
+        if (suffix && !*suffix && *pos == '.') {
+            *suffix = pos + 1;
+        } else if (!*file && *pos == '/') {
+            *file = pos + 1;
+            break;
+        }
+        --pos;
+    }
+
+    if (!*file)
+        *file = path;
+
+    if (!strcmp(*file, ""))
+        *file = NULL;
+
+    if (suffix && *suffix && streq(*suffix, ""))
+        *suffix = NULL;
 }
 

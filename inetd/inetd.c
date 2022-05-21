@@ -263,6 +263,11 @@ static int _process_connection(int sockfd)
         chdir(passwd->pw_dir);
     }
 
+    log_info("Begin to execute OBJ-FILE: %s", server->server_program);
+    log_info("Args are as follow:");
+    for (i = 0; server->server_program_arguments[i]; i++)
+        log_info("\t\t#%d\t\t%s", i, server->server_program_arguments[i]);
+
     if (execvp(server->server_program, 
                 server->server_program_arguments) < 0){
         log_error_sys("Exec program(%s) failed!", server->server_program);
@@ -392,15 +397,16 @@ static int _parse_handler(void * server_confs,
         return 0;
 
     if (!G_last_section) {
-        G_last_section = (char *) section;
+        G_last_section = (char *) strdup(section);
         G_server_conf_cnt = 1;
     }
 
     if (strcmp(section, G_last_section)) {
-        G_last_section = (char *)section;
+        free(G_last_section);
+        G_last_section = (char *) strdup(section);
         G_server_conf_cnt++;
     }
-    conf = server_confs + G_server_conf_cnt - 1; 
+    conf = (struct server_conf *)server_confs + G_server_conf_cnt - 1; 
 
     /* (NOTE) need to be free */
     copyed_cfg = strdup(cfg_value);
