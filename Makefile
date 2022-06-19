@@ -12,33 +12,43 @@ SUB_DIRS = `find ./src -maxdepth 1 -type d | awk '{if (NR > 1) print}'`
 MAKE_PRACTICE	:= ../Makefile
 
 target:	
-	@make -C lib
 	@make -C 3rd 
+	@make -C lib
+	@make -C lib/eventloop 
+	@make -C lib/coroutine
+	@make -C lib/pthread
 	@for dir in $(SUB_DIRS); do \
 		make -C $$dir -f $(MAKE_PRACTICE); \
     done
-	@make -C src/practice-16/web
-	@make -C lib/eventloop 
 	@make -C inetd
 	@make -C fsync
 	@make -C tftp
+	@make -C ping 
+	@make -C ping 
+
+.PHONY: tests 
+tests:
 	@make -C tests
 
+.PHONY: install 
 install:
 	@make -C inetd install
 	@make -C fsync install
 
 .PHONY: clean
 clean:
-	@make -C lib clean
+	@make -C tests clean 
 	@make -C 3rd clean
+	@make -C lib clean
+	@make -C lib/eventloop clean
+	@make -C lib/coroutine clean
+	@make -C lib/pthread clean
 	@for dir in $(SUB_DIRS); do \
 		make -C $$dir -f $(MAKE_PRACTICE) clean; \
     done
-	@make -C src/practice-16/web clean
 	@make -C inetd clean
 	@make -C fsync clean
 	@make -C tftp clean
-	@make -C tests clean
-	@make -C lib/eventloop clean 
+	@make -C ping clean 
+	@make -C ping clean 
 

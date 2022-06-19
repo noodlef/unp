@@ -1,0 +1,15 @@
+# 编译目录
+**/build
+
+*.d
+*.o
+*.S
+*.I
+
+*.so
+*.so.*
+
+tags
+
+.*
+!.gitignore
