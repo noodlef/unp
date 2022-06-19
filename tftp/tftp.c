@@ -266,6 +266,8 @@ static int _recv_data_block(struct eventloop * loop, int fd, void * user_data)
     _update_last_recv_time();
 
     if (pkt->code == TFTP_CODE_DATA) {
+        log_info("Recv data block[%d].", pkt->block_nr);
+
         ++G_tftp_config.stat_recv_cnt;
 
         if (pkt->len < G_tftp_config.block_size)

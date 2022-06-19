@@ -24,7 +24,7 @@ static char _is_delim(const char * delim, char c)
 
     if (!delim)
         return 0;
-    for (p = delim; p; p++)
+    for (p = delim; *p; p++)
         if (c == *p)
             return 1;
 
@@ -35,18 +35,19 @@ char ** split_str(const char * str, const char * delim)
 {
     int len, i, k;
     const char * p, * start;
-    char ** vec;
+    char ** vec, ** tmp;
 
-    if (!str) 
+    if (!str)
         return NULL;
     p = str;
     vec = NULL;
     i = len = 0;
     while (*p) {
         if (i >= len) {
-            len = len ? 2 * len : 8;
-            if (!(vec = realloc(vec, len)))
+            len = len ? (2 * (len + 1) - 1) : 7;
+            if (!(tmp = realloc(vec, (len + 1) * sizeof(char **))))
                 goto err;
+            vec = tmp;
         }
 
         while (*p && _is_delim(delim, *p))
@@ -57,6 +58,7 @@ char ** split_str(const char * str, const char * delim)
         while (*p && !_is_delim(delim, *p))
             ++p;
 
+        /* copy str */
         k = p - start;
         if (!(vec[i] = malloc(k + 1)))  
             goto err;
@@ -72,6 +74,19 @@ err:
         free(vec[i]);
     free(vec);
     return NULL;
+}
+
+void free_str_array(char ** strs)
+{
+    int i;
+
+    if (!strs)
+        return;
+    
+    for (i = 0; strs[i]; i++)
+        free(strs[i]);
+   
+    free(strs); 
 }
 
 char * format_str(char * fmt, ...)

@@ -25,4 +25,17 @@
  */
 void basename_path(char * path, char ** file, char ** suffix);
 
+/**
+ * 使用指定的分割符分割字符串 
+ * 参数：
+ *     str：待分割字符串
+ *     delim：分割字符集合
+ * 返回：
+ *     失败：NULL
+ *     成功：分割子串数组，以NULL结尾, 使用free_str_array释放内存 
+ */
+char ** split_str(const char * str, const char * delim);
+
+void free_str_array(char ** strs);
+
 #endif //STR_UTILS_H

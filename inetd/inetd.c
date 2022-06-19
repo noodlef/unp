@@ -189,10 +189,28 @@ static int _init_sockfd_set(struct server_conf ** servers)
     return new_maxfd + 1;
 }
 
+static void _drop_udp_packet(int sockfd, struct server_conf * server)
+{
+    char drop;
+
+    /**
+     * must drop the datagram in recvbuf if 'UDP', or the parent 
+     * will fork another child again to handle the reqeust. 
+     */
+    if (!strcmp(server->protocol, "udp")) {
+
+        while (recv(sockfd, &drop, sizeof(drop), MSG_DONTWAIT) != -1)
+            /* NO-OP */;
+
+        if (errno != EAGAIN)
+            log_warning_sys("Read error when drop udp data!");
+    }
+}
+
 static int _process_connection(int sockfd)
 {
     uint16_t port;
-    int pid, i, drop;
+    int pid, i;
     char * user, ip[32];
     struct sockaddr_in conn_addr;
     struct passwd * passwd;
@@ -278,16 +296,8 @@ static int _process_connection(int sockfd)
     _exit(EXIT_FAILURE);
 
 failed:
-
-    /**
-     * must drop the datagram in recvbuf if 'UDP', or the parent 
-     * will fork another child again to handle the reqeust. 
-     */
-    if (!strcmp(server->protocol, "udp")) {
-        if (read(0, (char *)&drop, sizeof(drop)) < 0) {
-            log_warning_sys("Read error when drop udp data!");
-        }
-    }
+    
+    _drop_udp_packet(0, server);
     _exit(EXIT_FAILURE);
 }
 
@@ -364,13 +374,32 @@ static void _sig_child(int signo)
     struct wait_queue * wait;
 
     while ((pid = waitpid(-1, &stat, WNOHANG)) > 0) {
-        log_warning("Child(%d) terminated by signal(%d)",
-                pid, signo);
+        if (WIFEXITED(stat)|| WIFSIGNALED(stat)) {
+            /* child exited */
+            if (WIFEXITED(stat))
+                log_info("Child(%d) exit with status=%d", 
+                        pid, WEXITSTATUS(stat));
+            else 
+                log_warning("Child(%d) terminated by signal(%d)", 
+                        pid, WTERMSIG(stat));
 
-        if ((wait = _search_queue(&G_wait_queue, pid))) {
-            sockfd = wait->sockfd;
-            G_server_map[sockfd] = wait->conf; 
-            _remove_from_queue(&G_wait_queue, wait);
+            if ((wait = _search_queue(&G_wait_queue, pid))) {
+                sockfd = wait->sockfd;
+                G_server_map[sockfd] = wait->conf; 
+                /**
+                 * for udp server, we must drop any data left in the 
+                 * socket buffer before we can serve another new client
+                 */
+                _drop_udp_packet(sockfd, G_server_map[sockfd]);
+                _remove_from_queue(&G_wait_queue, wait);
+            }
+        } else if (WIFSTOPPED(stat)) {
+            /* stopped */
+            log_warning("Child(%d) stopped by signal(%d)",
+                    pid, WSTOPSIG(stat));
+        } else if (WIFCONTINUED(stat)) {
+            /* continue */
+            log_warning("Child(%d) continued", pid);
         }
     }
 

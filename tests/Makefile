@@ -14,6 +14,8 @@
 
 include ../makeconfig
 
+CFLAGS	+= -rdynamic
+
 LIB_OBJS		:= $(wildcard ../lib/$(OBJ_DIR)/*.o)
 LIB_OBJS		+= $(wildcard ../lib/eventloop/$(OBJ_DIR)/*.o)
 LIB_OBJS		+= $(wildcard ../3rd/$(OBJ_DIR)/*.o)
